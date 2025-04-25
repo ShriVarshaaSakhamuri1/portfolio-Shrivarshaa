@@ -2,617 +2,463 @@
   "sectionTitle": "Technical Skills",
   "sectionDescription": "Explore my technical expertise and proficiency across various technologies and tools.",
   "skills": [
-      {
-          "id": 1,
-          "name": "React",
-          "description": "JavaScript library for building user interfaces",
-          "category": "frontend",
-          "level": 3,
-          "experience": 30,
-          "tags": [
-              "Frontend"
-          ],
-          "projects": [
-              "Academica – Academic Networking Platform"
-          ],
-          "achievements": [
-              "Built dynamic UIs using components and props",
-              "Implemented state management with Redux"
-          ]
-      },
-      {
-          "id": 2,
-          "name": "Node.js",
-          "description": "JavaScript runtime for server-side programming",
-          "category": "backend",
-          "level": 2,
-          "experience": 30,
-          "tags": [
-              "Backend"
-          ],
-          "projects": [
-              "Academica – Academic Networking Platform"
-          ],
-          "achievements": [
-              "Developed backend APIs for data handling and user authentication",
-              "Implemented real-time features with Socket.io"
-          ]
-      },
-      {
-          "id": 3,
-          "name": "Next.js",
-          "description": "React framework for server-rendered apps",
-          "category": "frontend",
-          "level": 3,
-          "experience": 30,
-          "tags": [
-              "Frontend"
-          ],
-          "projects": [
-              "Academica – Academic Networking Platform"
-          ],
-          "achievements": [
-              "Implemented server-side rendering and routing"
-          ]
-      },
-      {
-          "id": 4,
-          "name": "REST API",
-          "description": "Architectural style for web services",
-          "category": "backend",
-          "level": 3,
-          "experience": 30,
-          "tags": [
-              "Backend"
-          ],
-          "projects": [
-              "Academica – Academic Networking Platform"
-          ],
-          "achievements": [
-              "Designed and consumed RESTful APIs for frontend-backend communication"
-          ]
-      },
-      {
-          "id": 5,
-          "name": "HTML",
-          "description": "Standard markup language for web pages",
-          "category": "frontend",
-          "level": 3,
-          "experience": 50,
-          "tags": [
-              "Frontend"
-          ],
-          "projects": [
-              "Ohiohoo Skincare – Cosmetic E-commerce Website"
-          ],
-          "achievements": [
-              "Structured web pages with semantic HTML elements"
-          ]
-      },
-      {
-          "id": 6,
-          "name": "CSS",
-          "description": "Style sheet language for web pages",
-          "category": "frontend",
-          "level": 3,
-          "experience": 50,
-          "tags": [
-              "Frontend"
-          ],
-          "projects": [
-              "Ohiohoo Skincare – Cosmetic E-commerce Website"
-          ],
-          "achievements": [
-              "Styled components and ensured responsive layouts"
-          ]
-      },
-      {
-          "id": 7,
-          "name": "JavaScript",
-          "description": "Scripting language for web development",
-          "category": "frontend",
-          "level": 3,
-          "experience": 10,
-          "tags": [
-              "Frontend"
-          ],
-          "projects": [
-              "Ohiohoo Skincare – Cosmetic E-commerce Website"
-          ],
-          "achievements": [
-              "Added interactivity and DOM manipulation"
-          ]
-      },
-      {
-          "id": 8,
-          "name": "Selenium",
-          "description": "Automation tool for web browsers",
-          "category": "testing",
-          "level": 3,
-          "experience": 30,
-          "tags": [
-              "Testing"
-          ],
-          "projects": [
-              "Ohiohoo Skincare – Cosmetic E-commerce Website"
-          ],
-          "achievements": [
-              "Automated browser tests for validating UI flows",
-              "Developed comprehensive end-to-end test suites"
-          ]
-      },
-      {
-          "id": 9,
-          "name": "Python",
-          "description": "General-purpose programming language",
-          "category": "backend",
-          "level": 3,
-          "experience": 50,
-          "tags": [
-              "Backend"
-          ],
-          "projects": [
-              "MIME Recognition for Indian Sign Language",
-              "Secure File Transfer using Blockchain and Cryptography",
-              "Image Classification using CNN (CIFAR-10)",
-              "Convolutional Networks for Biomedical Image Segmentation",
-              "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
-          ],
-          "achievements": [
-              "Implemented backend logic and machine learning models"
-          ]
-      },
-      {
-          "id": 10,
-          "name": "TensorFlow",
-          "description": "Open-source platform for machine learning",
-          "category": "ml",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Ml"
-          ],
-          "projects": [
-              "MIME Recognition for Indian Sign Language",
-              "Convolutional Networks for Biomedical Image Segmentation"
-          ],
-          "achievements": [
-              "Trained neural networks for image recognition"
-          ]
-      },
-      {
-          "id": 11,
-          "name": "Keras",
-          "description": "High-level neural networks API",
-          "category": "ml",
-          "level": 2,
-          "experience": 20,
-          "tags": [
-              "Ml"
-          ],
-          "projects": [
-              "MIME Recognition for Indian Sign Language",
-              "Convolutional Networks for Biomedical Image Segmentation"
-          ],
-          "achievements": [
-              "Built deep learning models with simplified syntax"
-          ]
-      },
-      {
-          "id": 12,
-          "name": "Flask",
-          "description": "Python micro web framework",
-          "category": "backend",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Backend"
-          ],
-          "projects": [
-              "MIME Recognition for Indian Sign Language",
-              "Secure File Transfer using Blockchain and Cryptography"
-          ],
-          "achievements": [
-              "Developed REST APIs and served ML models"
-          ]
-      },
-      {
-          "id": 13,
-          "name": "CNN",
-          "description": "Convolutional Neural Network for image recognition",
-          "category": "ml",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Ml"
-          ],
-          "projects": [
-              "MIME Recognition for Indian Sign Language",
-              "Image Classification using CNN (CIFAR-10)"
-          ],
-          "achievements": [
-              "Built convolutional neural networks for classification"
-          ]
-      },
-      {
-          "id": 14,
-          "name": "PyTorch",
-          "description": "Deep learning framework",
-          "category": "ml",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Ml"
-          ],
-          "projects": [
-              "Image Classification using CNN (CIFAR-10)"
-          ],
-          "achievements": [
-              "Created and trained custom CNN models"
-          ]
-      },
-      {
-          "id": 15,
-          "name": "Matplotlib",
-          "description": "Plotting library for Python",
-          "category": "data_visualization",
-          "level": 3,
-          "experience": 30,
-          "tags": [
-              "Data_visualization"
-          ],
-          "projects": [
-              "Image Classification using CNN (CIFAR-10)"
-          ],
-          "achievements": [
-              "Visualized training performance with graphs"
-          ]
-      },
-      {
-          "id": 16,
-          "name": "Blockchain",
-          "description": "Distributed ledger technology",
-          "category": "security",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Security"
-          ],
-          "projects": [
-              "Secure File Transfer using Blockchain and Cryptography",
-              "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
-          ],
-          "achievements": [
-              "Implemented blockchain for secure data logging"
-          ]
-      },
-      {
-          "id": 17,
-          "name": "AES",
-          "description": "Encryption algorithm",
-          "category": "security",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Security"
-          ],
-          "projects": [
-              "Secure File Transfer using Blockchain and Cryptography",
-              "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
-          ],
-          "achievements": [
-              "Encrypted data using AES symmetric cryptography"
-          ]
-      },
-      {
-          "id": 18,
-          "name": "RSA",
-          "description": "Public-key cryptosystem",
-          "category": "security",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Security"
-          ],
-          "projects": [
-              "Secure File Transfer using Blockchain and Cryptography",
-              "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
-          ],
-          "achievements": [
-              "Secured key exchange using RSA encryption"
-          ]
-      },
-      {
-          "id": 19,
-          "name": "Cryptography",
-          "description": "Practice of secure communication",
-          "category": "security",
-          "level": 3,
-          "experience": 20,
-          "tags": [
-              "Security"
-          ],
-          "projects": [
-              "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
-          ],
-          "achievements": [
-              "Integrated encryption modules for secure communication"
-          ]
-      },
-      {
-          "id": 20,
-          "name": "AWS EC2",
-          "description": "Elastic Compute Cloud for scalable computing",
-          "category": "cloud",
-          "level": 3,
-          "experience": 40,
-          "tags": [
-              "Cloud"
-          ],
-          "projects": [
-              "End-to-End CI/CD Pipeline Implementation on AWS"
-          ],
-          "achievements": [
-              "Hosted web applications on scalable EC2 instances"
-          ]
-      },
-      [
-          {
-              "id": 21,
-              "name": "CodePipeline",
-              "description": "CI/CD service for fast updates",
-              "category": "devops",
-              "level": 3,
-              "experience": 20,
-              "tags": [
-                  "Devops"
-              ],
-              "projects": [
-                  "End-to-End CI/CD Pipeline Implementation on AWS"
-              ],
-              "achievements": [
-                  "Set up CI/CD pipelines for automated deployment"
-              ]
-          },
-          {
-              "id": 22,
-              "name": "CodeDeploy",
-              "description": "Automated deployment service",
-              "category": "devops",
-              "level": 3,
-              "experience": 20,
-              "tags": [
-                  "Devops"
-              ],
-              "projects": [
-                  "End-to-End CI/CD Pipeline Implementation on AWS"
-              ],
-              "achievements": [
-                  "Managed deployment across multiple environments"
-              ]
-          },
-          {
-              "id": 23,
-              "name": "CodeBuild",
-              "description": "Build service in AWS",
-              "category": "devops",
-              "level": 3,
-              "experience": 30,
-              "tags": [
-                  "Devops"
-              ],
-              "projects": [
-                  "End-to-End CI/CD Pipeline Implementation on AWS"
-              ],
-              "achievements": [
-                  "Configured builds triggered by GitHub pushes"
-              ]
-          },
-          {
-              "id": 24,
-              "name": "GitHub Actions",
-              "description": "CI/CD workflows automation",
-              "category": "devops",
-              "level": 3,
-              "experience": 30,
-              "tags": [
-                  "Devops"
-              ],
-              "projects": [
-                  "End-to-End CI/CD Pipeline Implementation on AWS"
-              ],
-              "achievements": [
-                  "Automated testing and deployment workflows"
-              ]
-          },
-          {
-              "id": 25,
-              "name": "AWS S3",
-              "description": "Scalable object storage",
-              "category": "cloud",
-              "level": 3,
-              "experience": 30,
-              "tags": [
-                  "Cloud"
-              ],
-              "projects": [
-                  "End-to-End CI/CD Pipeline Implementation on AWS"
-              ],
-              "achievements": [
-                  "Used S3 for storing and serving static content"
-              ]
-          },
-          {
-              "id": 26,
-              "name": "CloudFormation",
-              "description": "Infrastructure as code service",
-              "category": "cloud",
-              "level": 3,
-              "experience": 20,
-              "tags": [
-                  "Cloud"
-              ],
-              "projects": [
-                  "End-to-End CI/CD Pipeline Implementation on AWS"
-              ],
-              "achievements": [
-                  "Provisioned infrastructure as code using templates"
-              ]
-          },
-          {
-              "id": 27,
-              "name": "OpenCV",
-              "description": "Library for computer vision",
-              "category": "ml",
-              "level": 3,
-              "experience": 20,
-              "tags": [
-                  "Ml"
-              ],
-              "projects": [
-                  "Convolutional Networks for Biomedical Image Segmentation"
-              ],
-              "achievements": [
-                  "Processed images and extracted features for ML"
-              ]
-          },
-          [
-            {
-              "id": 28,
-              "name": "Scikit-learn & Pandas",
-              "description": "Machine learning library in Python for data mining and analysis",
-              "category": "ml",
-              "level": 3,
-              "experience": 20,
-              "tags": [
-                  "Ml"
-              ],
-              "projects": [
-                  "Image Classification using CNN (CIFAR-10)",
-                  "MIME Recognition for Indian Sign Language"
-              ],
-              "achievements": [
-                  "Used for preprocessing, model training, and evaluation in ML workflows",
-                  "Handled structured data for machine learning input and analysis"
-              ]
-          },
-          [
-              {
-                  "id": 29,
-                  "name": "Linux Systems",
-                  "description": "Operating system knowledge for managing servers and deployments",
-                  "category": "infrastructure",
-                  "level": 3,
-                  "experience": 20,
-                  "tags": [
-                      "Infrastructure"
-                  ],
-                  "projects": [
-                      "End-to-End CI/CD Pipeline Implementation on AWS"
-                  ],
-                  "achievements": [
-                      "Managed deployments and infrastructure tasks using Linux command line"
-                  ]
-              },
-              {
-                  "id": 30,
-                  "name": "Machine Learning",
-                  "description": "Algorithms that allow computers to learn from data",
-                  "category": "ml",
-                  "level": 3,
-                  "experience": 20,
-                  "tags": [
-                      "Ml"
-                  ],
-                  "projects": [
-                      "MIME Recognition for Indian Sign Language",
-                      "Image Classification using CNN (CIFAR-10)",
-                      "Convolutional Networks for Biomedical Image Segmentation"
-                  ],
-                  "achievements": [
-                      "Developed and trained models using supervised learning techniques"
-                  ]
-              },
-              {
-                "id": 31,
-                "name": "Java",
-                "description": "Object-oriented programming language used for building robust applications",
-                "category": "programming",
-                "level": 3,
-                "experience": 40,
-                "tags": ["Backend", "OOP"],
-                "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
-                "achievements": [
-                  "Built and deployed Java-Maven applications using CI/CD pipelines on AWS",
-                  "Integrated Java services with REST APIs for scalable backend operations"
-                ]
-              },
-              {
-                "id": 32,
-                "name": "Pega BPM",
-                "description": "Business Process Management platform for building scalable, low-code workflow and automation solutions",
-                "category": "platform",
-                "level": 3,
-                "experience": 50,
-                "tags": [
-                  "BPM",
-                  "Automation",
-                  "Workflow",
-                  "Low-Code",
-                  "Backend Development"
-                ],
-                "projects": [
-                  "Local Services Booking Platform – Virtusa Internship",
-                  "Various applications developed during CSSA and CSA certifications"
-                ],
-                "achievements": [
-                  "Built scalable workflows and automated booking processes using Pega BPM during Virtusa internship",
-                  "Improved booking system efficiency by 40% with rule-based processing",
-                  "Designed and developed multiple Pega applications as part of CSSA and CSA certifications"
-                ]
-              },
-              
-              {
-                  "id": 33,
-                  "name": "MySQL",
-                  "description": "Relational database management system for structured data",
-                  "category": "database",
-                  "level": 3,
-                  "experience": 20,
-                  "tags": [
-                      "Database"
-                  ],
-                  "projects": [
-                      "Ohiohoo Skincare – Cosmetic E-commerce Website"
-                  ],
-                  "achievements": [
-                      "Managed data storage and retrieval using MySQL"
-                  ]
-              }
-          ]
+    {
+      "id": 1,
+      "name": "React",
+      "description": "JavaScript library for building user interfaces",
+      "category": "frontend",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Frontend"],
+      "projects": ["Academica – Academic Networking Platform"],
+      "achievements": [
+        "Built dynamic UIs using components and props",
+        "Implemented state management with Redux"
       ]
-  ]
-],
+    },
+    {
+      "id": 2,
+      "name": "Node.js",
+      "description": "JavaScript runtime for server-side programming",
+      "category": "backend",
+      "level": 2,
+      "experience": 30,
+      "tags": ["Backend"],
+      "projects": ["Academica – Academic Networking Platform"],
+      "achievements": [
+        "Developed backend APIs for data handling and user authentication",
+        "Implemented real-time features with Socket.io"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Next.js",
+      "description": "React framework for server-rendered apps",
+      "category": "frontend",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Frontend"],
+      "projects": ["Academica – Academic Networking Platform"],
+      "achievements": ["Implemented server-side rendering and routing"]
+    },
+    {
+      "id": 4,
+      "name": "REST API",
+      "description": "Architectural style for web services",
+      "category": "backend",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Backend"],
+      "projects": ["Academica – Academic Networking Platform"],
+      "achievements": [
+        "Designed and consumed RESTful APIs for frontend-backend communication"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "HTML",
+      "description": "Standard markup language for web pages",
+      "category": "frontend",
+      "level": 3,
+      "experience": 50,
+      "tags": ["Frontend"],
+      "projects": ["Ohiohoo Skincare – Cosmetic E-commerce Website"],
+      "achievements": ["Structured web pages with semantic HTML elements"]
+    },
+    {
+      "id": 6,
+      "name": "CSS",
+      "description": "Style sheet language for web pages",
+      "category": "frontend",
+      "level": 3,
+      "experience": 50,
+      "tags": ["Frontend"],
+      "projects": ["Ohiohoo Skincare – Cosmetic E-commerce Website"],
+      "achievements": ["Styled components and ensured responsive layouts"]
+    },
+    {
+      "id": 7,
+      "name": "JavaScript",
+      "description": "Scripting language for web development",
+      "category": "frontend",
+      "level": 3,
+      "experience": 10,
+      "tags": ["Frontend"],
+      "projects": ["Ohiohoo Skincare – Cosmetic E-commerce Website"],
+      "achievements": ["Added interactivity and DOM manipulation"]
+    },
+    {
+      "id": 8,
+      "name": "Selenium",
+      "description": "Automation tool for web browsers",
+      "category": "testing",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Testing"],
+      "projects": ["Ohiohoo Skincare – Cosmetic E-commerce Website"],
+      "achievements": [
+        "Automated browser tests for validating UI flows",
+        "Developed comprehensive end-to-end test suites"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Python",
+      "description": "General-purpose programming language",
+      "category": "backend",
+      "level": 3,
+      "experience": 50,
+      "tags": ["Backend"],
+      "projects": [
+        "MIME Recognition for Indian Sign Language",
+        "Secure File Transfer using Blockchain and Cryptography",
+        "Image Classification using CNN (CIFAR-10)",
+        "Convolutional Networks for Biomedical Image Segmentation",
+        "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
+      ],
+      "achievements": ["Implemented backend logic and machine learning models"]
+    },
+    {
+      "id": 10,
+      "name": "TensorFlow",
+      "description": "Open-source platform for machine learning",
+      "category": "ai_ml",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Ml"],
+      "projects": [
+        "MIME Recognition for Indian Sign Language",
+        "Convolutional Networks for Biomedical Image Segmentation"
+      ],
+      "achievements": ["Trained neural networks for image recognition"]
+    },
+    {
+      "id": 11,
+      "name": "Keras",
+      "description": "High-level neural networks API",
+      "category": "ai_ml",
+      "level": 2,
+      "experience": 20,
+      "tags": ["Ml"],
+      "projects": [
+        "MIME Recognition for Indian Sign Language",
+        "Convolutional Networks for Biomedical Image Segmentation"
+      ],
+      "achievements": ["Built deep learning models with simplified syntax"]
+    },
+    {
+      "id": 12,
+      "name": "Flask",
+      "description": "Python micro web framework",
+      "category": "backend",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Backend"],
+      "projects": [
+        "MIME Recognition for Indian Sign Language",
+        "Secure File Transfer using Blockchain and Cryptography"
+      ],
+      "achievements": ["Developed REST APIs and served ML models"]
+    },
+    {
+      "id": 13,
+      "name": "CNN",
+      "description": "Convolutional Neural Network for image recognition",
+      "category": "ai_ml",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Ml"],
+      "projects": [
+        "MIME Recognition for Indian Sign Language",
+        "Image Classification using CNN (CIFAR-10)"
+      ],
+      "achievements": ["Built convolutional neural networks for classification"]
+    },
+    {
+      "id": 14,
+      "name": "PyTorch",
+      "description": "Deep learning framework",
+      "category": "ai_ml",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Ml"],
+      "projects": ["Image Classification using CNN (CIFAR-10)"],
+      "achievements": ["Created and trained custom CNN models"]
+    },
+    {
+      "id": 15,
+      "name": "Matplotlib",
+      "description": "Plotting library for Python",
+      "category": "ai_ml",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Data_visualization"],
+      "projects": ["Image Classification using CNN (CIFAR-10)"],
+      "achievements": ["Visualized training performance with graphs"]
+    },
+    {
+      "id": 16,
+      "name": "Blockchain",
+      "description": "Distributed ledger technology",
+      "category": "security",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Security"],
+      "projects": [
+        "Secure File Transfer using Blockchain and Cryptography",
+        "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
+      ],
+      "achievements": ["Implemented blockchain for secure data logging"]
+    },
+    {
+      "id": 17,
+      "name": "AES",
+      "description": "Encryption algorithm",
+      "category": "security",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Security"],
+      "projects": [
+        "Secure File Transfer using Blockchain and Cryptography",
+        "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
+      ],
+      "achievements": ["Encrypted data using AES symmetric cryptography"]
+    },
+    {
+      "id": 18,
+      "name": "RSA",
+      "description": "Public-key cryptosystem",
+      "category": "security",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Security"],
+      "projects": [
+        "Secure File Transfer using Blockchain and Cryptography",
+        "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
+      ],
+      "achievements": ["Secured key exchange using RSA encryption"]
+    },
+    {
+      "id": 19,
+      "name": "Cryptography",
+      "description": "Practice of secure communication",
+      "category": "security",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Security"],
+      "projects": [
+        "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain"
+      ],
+      "achievements": ["Integrated encryption modules for secure communication"]
+    },
+    {
+      "id": 20,
+      "name": "AWS EC2",
+      "description": "Elastic Compute Cloud for scalable computing",
+      "category": "devops",
+      "level": 3,
+      "experience": 40,
+      "tags": ["Cloud"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": ["Hosted web applications on scalable EC2 instances"]
+    },
+    {
+      "id": 21,
+      "name": "CodePipeline",
+      "description": "CI/CD service for fast updates",
+      "category": "devops",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Cloud"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": ["Set up CI/CD pipelines for automated deployment"]
+    },
+    {
+      "id": 22,
+      "name": "CodeDeploy",
+      "description": "Automated deployment service",
+      "category": "devops",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Devops"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": ["Managed deployment across multiple environments"]
+    },
+    {
+      "id": 23,
+      "name": "CodeBuild",
+      "description": "Build service in AWS",
+      "category": "devops",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Devops"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": ["Configured builds triggered by GitHub pushes"]
+    },
+    {
+      "id": 24,
+      "name": "GitHub Actions",
+      "description": "CI/CD workflows automation",
+      "category": "devops",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Devops"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": ["Automated testing and deployment workflows"]
+    },
+    {
+      "id": 25,
+      "name": "AWS S3",
+      "description": "Scalable object storage",
+      "category": "devops",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Cloud"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": ["Used S3 for storing and serving static content"]
+    },
+    {
+      "id": 26,
+      "name": "CloudFormation",
+      "description": "Infrastructure as code service",
+      "category": "devops",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Cloud"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": ["Provisioned infrastructure as code using templates"]
+    },
+    {
+      "id": 27,
+      "name": "OpenCV",
+      "description": "Library for computer vision",
+      "category": "ai_ml",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Ml"],
+      "projects": ["Convolutional Networks for Biomedical Image Segmentation"],
+      "achievements": ["Processed images and extracted features for ML"]
+    },
+    {
+      "id": 28,
+      "name": "Scikit-learn & Pandas",
+      "description": "Machine learning library in Python for data mining and analysis",
+      "category": "ai_ml",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Ml"],
+      "projects": [
+        "Image Classification using CNN (CIFAR-10)",
+        "MIME Recognition for Indian Sign Language"
+      ],
+      "achievements": [
+        "Used for preprocessing, model training, and evaluation in ML workflows",
+        "Handled structured data for machine learning input and analysis"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "MySQL",
+      "description": "Open-source relational database management system",
+      "category": "database",
+      "level": 3,
+      "experience": 30,
+      "tags": ["Database"],
+      "projects": ["Ohiohoo Skincare – Cosmetic E-commerce Website"],
+      "achievements": [
+        "Designed and optimized database schemas",
+        "Implemented complex SQL queries and stored procedures"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Linux Systems",
+      "description": "Operating system knowledge for managing servers and deployments",
+      "category": "devops",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Infrastructure"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": [
+        "Managed deployments and infrastructure tasks using Linux command line"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Machine Learning",
+      "description": "Algorithms that allow computers to learn from data",
+      "category": "ai_ml",
+      "level": 3,
+      "experience": 20,
+      "tags": ["Ml"],
+      "projects": [
+        "MIME Recognition for Indian Sign Language",
+        "Image Classification using CNN (CIFAR-10)",
+        "Convolutional Networks for Biomedical Image Segmentation"
+      ],
+      "achievements": [
+        "Developed and trained models using supervised learning techniques"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Java",
+      "description": "Object-oriented programming language used for building robust applications",
+      "category": "backend",
+      "level": 3,
+      "experience": 40,
+      "tags": ["Backend", "OOP"],
+      "projects": ["End-to-End CI/CD Pipeline Implementation on AWS"],
+      "achievements": [
+        "Built and deployed Java-Maven applications using CI/CD pipelines on AWS",
+        "Integrated Java services with REST APIs for scalable backend operations"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Pega BPM",
+      "description": "Business Process Management platform for building scalable, low-code workflow and automation solutions",
+      "category": "testing",
+      "level": 3,
+      "experience": 50,
+      "tags": [
+        "BPM",
+        "Automation",
+        "Workflow",
+        "Low-Code",
+        "Backend Development"
+      ],
+      "projects": [
+        "Local Services Booking Platform – Virtusa Internship",
+        "Various applications developed during CSSA and CSA certifications"
+      ],
+      "achievements": [
+        "Built scalable workflows and automated booking processes using Pega BPM during Virtusa internship",
+        "Improved booking system efficiency by 40% with rule-based processing",
+        "Designed and developed multiple Pega applications as part of CSSA and CSA certifications"
+      ]
+    }
+  ],
   "stats": [
-      {
-          "value": "12+",
-          "label": "Programming Languages",
-          "color": "from-primary/20 to-primary/5"
-      },
-      {
-          "value": "5+",
-          "label": "Database Systems",
-          "color": "from-blue-500/20 to-blue-500/5"
-      },
-      {
-          "value": "16+",
-          "label": "Web Technologies",
-          "color": "from-secondary/20 to-secondary/5"
-      },
-      {
-          "value": "30+",
-          "label": "Development Tools",
-          "color": "from-secondary/20 to-secondary/5"
-      }
+    {
+      "value": "12+",
+      "label": "Programming Languages",
+      "color": "from-primary/20 to-primary/5"
+    },
+    {
+      "value": "5+",
+      "label": "Database Systems",
+      "color": "from-blue-500/20 to-blue-500/5"
+    },
+    {
+      "value": "16+",
+      "label": "Web Technologies",
+      "color": "from-secondary/20 to-secondary/5"
+    },
+    {
+      "value": "30+",
+      "label": "Development Tools",
+      "color": "from-secondary/20 to-secondary/5"
+    }
   ]
 }

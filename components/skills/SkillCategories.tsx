@@ -41,21 +41,7 @@ export default function SkillCategories({ skills }: SkillCategoriesProps) {
       category: "backend",
     },
     {
-      name: "Database Management",
-      icon: Database,
-      color: "text-green-500",
-      bgColor: "bg-green-500/10",
-      category: "database",
-    },
-    {
-      name: "Mobile Development",
-      icon: Smartphone,
-      color: "text-yellow-500",
-      bgColor: "bg-yellow-500/10",
-      category: "mobile",
-    },
-    {
-      name: "AI & Machine Learning",
+      name: "AI & ML",
       icon: Brain,
       color: "text-purple-500",
       bgColor: "bg-purple-500/10",
@@ -66,7 +52,7 @@ export default function SkillCategories({ skills }: SkillCategoriesProps) {
       icon: Cpu,
       color: "text-blue-500",
       bgColor: "bg-blue-500/10",
-      category: "systems",
+      category: "devops",
     },
     {
       name: "Security",
@@ -76,25 +62,18 @@ export default function SkillCategories({ skills }: SkillCategoriesProps) {
       category: "security",
     },
     {
-      name: "DevOps",
-      icon: Code,
-      color: "text-indigo-500",
-      bgColor: "bg-indigo-500/10",
-      category: "devops",
-    },
-    {
-      name: "Testing",
+      name: "Testing & Automation",
       icon: Wrench,
       color: "text-pink-500",
       bgColor: "bg-pink-500/10",
       category: "testing",
     },
     {
-      name: "Embedded",
-      icon: Cpu,
-      color: "text-orange-500",
-      bgColor: "bg-orange-500/10",
-      category: "embedded",
+      name: "Database",
+      icon: Server,
+      color: "text-secondary",
+      bgColor: "bg-secondary/10",
+      category: "database",
     },
   ];
 
