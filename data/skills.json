@@ -25,7 +25,7 @@
           "name": "Node.js",
           "description": "JavaScript runtime for server-side programming",
           "category": "backend",
-          "level": 3,
+          "level": 2,
           "experience": 30,
           "tags": [
               "Backend"
@@ -185,7 +185,7 @@
           "name": "Keras",
           "description": "High-level neural networks API",
           "category": "ml",
-          "level": 3,
+          "level": 2,
           "experience": 20,
           "tags": [
               "Ml"
