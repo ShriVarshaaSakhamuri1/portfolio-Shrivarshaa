@@ -1,0 +1,569 @@
+{
+  "sectionTitle": "Education Journey",
+  "sectionDescription": "Explore my academic background, certifications, and continuous learning path.",
+  "formalEducation": [
+    {
+      "id": 1,
+      "title": "MS in Computer Science",
+      "institution": "University of Texas at Arlington",
+      "location": "Arlington, TX",
+      "year": "Aug 2023 - May 2025",
+      "description": "Master of Science in Computer Science - Specializing in Intelligence systems and Cloud Computing.",
+      "barColor": "bg-[#d53f8c]",
+      "iconBgColor": "bg-[#d53f8c]",
+      "showStar": true,
+      "achievements": [
+        "Major: Intelligent Systems",
+        "Major: Big Data/Cloud Computing",
+        "Acheived Academic Excellence Award",
+        "Member of Upsilon Pi Epsilon, the International Honor Society for the Computing and Information Disciplines. "
+      ],
+      "courses": [
+        "Data Analysis and Modeling Techniques",
+        "Cloud Computing and Big Data",
+        "Data Mining",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Software Engineering Management, Maintenance, and Quality Assurance",
+        "Web Data Management",
+        "Advanced Topics in Computer Science",
+        "Design and Analysis of Algorithms",
+        "Numerical Methods"
+      ],
+      "projects": [
+        "Image Classification using CNN on CIFAR-10 (PyTorch)",
+        "End-to-End CI/CD Pipeline Implementation on AWS",
+        "Academica-Academic Networking Site Development",
+        "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "Ohiohoo Skincare-Cosmetic E-commerce Website"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "BTech in Computer Science and Engineering",
+      "institution": "Siddhartha Academy of Higher Education",
+      "location": "Vijayawada, India",
+      "year": "Jun 2019 - May 2023",
+      "description": "Bachelor of Technology in Computer Science and Engineering with focus on Design logic,datastructures ,Computation,Programming Languages and Machine Learning.",
+      "barColor": "bg-[#4361ee]",
+      "iconBgColor": "bg-[#4361ee]",
+      "achievements": [
+        "First Class with Distinction",
+        "Published research paper in IEEE",
+        "Published research paper in Springer"
+      ],
+      "courses": [
+        "Probability and Statistics ",
+        "Object Oriented Programming using Java",
+        "Data Structures",
+        "Digital Logic Design",
+        "Probability and Statistics ",
+        "Python Programming",
+        "Operating Systems",
+        "Theory of Computation",
+        "Statistics with R",
+        "Mobile Application Development ",
+        "Web Technologies"
+      ],
+      "projects": [
+        " MIME Recognition for Indian Sign Language",
+        "Sharing Logistic Information Files Securely Using Cryptographic Algorithms",
+        "Secure Transfer of files within Organization using - AES, RSA, and Decentralized Blockchain"
+    ]
+}
+],
+    
+    "certifications": [
+        {
+            "id": 1,
+            "name": "AWS Certified Solutions Architect – Associate",
+            "issuer": "Amazon Web Services (AWS)",
+            "date": "March 2025",
+            "category": "DevOps",
+            "description": "Expertise in designing and deploying scalable systems on AWS.",
+            "skills": [
+                "AWS",
+                "EC2",
+                "Lambda",
+                "S3",
+                "CloudFormation"
+            ],
+            "url": "https://www.credly.com/badges/76c5dc9b-7989-4ca1-b70e-9b4e1fd504c4/public_url"
+        },
+        {
+            "id": 2,
+            "name": "Certified Senior System Architect (CSSA)",
+            "issuer": "Pega",
+            "date": "February 2023",
+            "category": "Low-code Automation",
+            "description": "Advanced application development with Pega platform.",
+            "skills": [
+                "Pega",
+                "CSSA"
+            ],
+            "url": "https://accounts.pega.com/profile/SHRIVARSHAAS/share/BPEGAPCSSA87V1-PEGAPCSSA87V1"
+        },
+        {
+            "id": 3,
+            "name": "Certified System Architect (CSA)",
+            "issuer": "Pega",
+            "date": "July 2022",
+            "category": "Low-code Automation",
+            "description": "Core skills for developing applications using Pega.",
+            "skills": [
+                "Pega",
+                "CSA"
+            ],
+            "url": "https://accounts.pega.com/profile/SHRIVARSHAAS/share/BPEGAPCSA87V1-PEGAPCSA87V1"
+        },
+        {
+            "id": 4,
+            "name": "CCNA: Introduction to Networks",
+            "issuer": "Cisco",
+            "date": "2022",
+            "category": "Networking",
+            "description": "Basics of networking, routers, switches, and IP addressing.",
+            "skills": [
+                "Networking",
+                "Routing",
+                "Switching"
+            ],
+            "url": "https://www.credly.com/badges/5d3f2e5a-55d9-4af6-b533-4f0ef46cd42e"
+        },
+        {
+            "id": 5,
+            "name": "Introduction to Cybersecurity",
+            "issuer": "Cisco",
+            "date": "2022",
+            "category": "Security",
+            "description": "Threats, attack vectors, and cybersecurity basics.",
+            "skills": [
+                "Cybersecurity",
+                "Threat Analysis"
+            ],
+            "url": "https://www.credly.com/badges/72800230-9321-45fe-a650-9d66bc39f13c"
+        },
+        {
+            "id": 6,
+            "name": "NDG Linux Essentials",
+            "issuer": "Cisco Networking Academy",
+            "date": "2022",
+            "category": "Operating Systems",
+            "description": "Linux CLI, filesystem, shell, and user permissions.",
+            "skills": [
+                "Linux",
+                "Shell",
+                "Filesystem"
+            ],
+            "url": "./images/certificates/1.pdf"
+        },
+        {
+            "id": 7,
+            "name": "Designing User Interfaces and Experiences (UI/UX)",
+            "issuer": "IBM",
+            "date": "January 2025",
+            "category": "UI/UX",
+            "description": "Fundamental concepts of user interface and user experience design, including design thinking, wireframing, and usability evaluation.",
+            "skills": [
+                "Design Thinking",
+                "Figma",
+                "Human-Centered Design",
+                "Wireframing",
+                "Usability Testing"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/77EKATK2ETSR"
+        },
+        {
+            "id": 8,
+            "name": "Introduction to Software Engineering (with Honors)",
+            "issuer": "IBM",
+            "date": "January 2025",
+            "category": "Software Engineering",
+            "description": "Overview of the software development lifecycle, agile methodologies, version control, and foundational engineering principles.",
+            "skills": [
+                "SDLC",
+                "Agile",
+                "Version Control",
+                "Testing & Debugging",
+                "OOP",
+                "CI/CD"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/C3SZEEWYRZNP"
+        },
+        {
+            "id": 9,
+            "name": "Getting Started with Front-End and Web Development (with Honors)",
+            "issuer": "IBM",
+            "date": "December 2024",
+            "category": "Web Development",
+            "description": "Basic front-end development skills, including building responsive web pages using HTML, CSS, and JavaScript.",
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive Design",
+                "Web Accessibility"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/BL19XFSB2TZ4"
+        },
+        {
+            "id": 10,
+            "name": "Hand Gesture Recognition using TensorFlow and Keras",
+            "issuer": "Deprecated Guided Projects",
+            "date": "February 2022",
+            "category": "AI",
+            "description": "Hands-on project that explores gesture recognition using deep learning with TensorFlow and Keras.",
+            "skills": [
+                "TensorFlow",
+                "Keras",
+                "Computer Vision",
+                "Image Processing",
+                "Model Training"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/JNEN5T7TJ82Y"
+        },
+        {
+            "id": 11,
+            "name": "Databases and SQL for Data Science with Python",
+            "issuer": "IBM",
+            "date": "November 2021",
+            "category": "Data Science",
+            "description": "Database concepts and SQL with Python integration for data science tasks.",
+            "skills": [
+                "SQL",
+                "Database Design",
+                "Data Extraction",
+                "Python",
+                "Data Wrangling"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/AP5YCZTDMMCF"
+        },
+        {
+            "id": 12,
+            "name": "Create and Design Digital Products using Canva",
+            "issuer": "Coursera Project Network",
+            "date": "July 2021",
+            "category": "Design",
+            "description": "Designed digital assets for branding, marketing, and communication using Canva.",
+            "skills": [
+                "Graphic Design",
+                "Canva",
+                "Branding",
+                "Visual Storytelling"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/5P63QFTSBWED"
+        },
+        {
+            "id": 13,
+            "name": "HTML and CSS: Building a Single-Page Website",
+            "issuer": "Coursera Project Network",
+            "date": "September 2020",
+            "category": "Web Development",
+            "description": "Built a responsive single-page website using HTML and CSS.",
+            "skills": [
+                "HTML",
+                "CSS",
+                "Layout Design",
+                "Responsive Web Design"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/BTC3TG6M29YB"
+        },
+        {
+            "id": 14,
+            "name": "Python Functions, Files, and Dictionaries",
+            "issuer": "University of Michigan",
+            "date": "September 2020",
+            "category": "Programming",
+            "description": "Covered intermediate Python skills including functions, file handling, and dictionaries.",
+            "skills": [
+                "Python",
+                "Functions",
+                "File I/O",
+                "Dictionaries",
+                "Basic Scripting"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/Q2HLQHQCX7ME"
+        },
+        {
+            "id": 15,
+            "name": "Deep Learning Inference with Azure ML Studio",
+            "issuer": "Deprecated Guided Projects",
+            "date": "August 2020",
+            "category": "AI",
+            "description": "Applied deep learning inference using Microsoft Azure ML Studio.",
+            "skills": [
+                "Deep Learning",
+                "Azure ML",
+                "Model Deployment"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/MXMG62EL829G"
+        },
+        {
+            "id": 16,
+            "name": "Introduction to HTML",
+            "issuer": "Coursera Project Network",
+            "date": "August 2020",
+            "category": "Web Development",
+            "description": "Learned foundational HTML for structuring web pages.",
+            "skills": [
+                "HTML",
+                "Web Structure"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/67TTZG2P4UW5"
+        },
+        {
+            "id": 17,
+            "name": "Introduction to Python",
+            "issuer": "Coursera Project Network",
+            "date": "August 2020",
+            "category": "Programming",
+            "description": "Learned Python basics including syntax, loops, and functions.",
+            "skills": [
+                "Python",
+                "Programming Basics"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/Z87F49J3R5Q8"
+        },
+        {
+            "id": 18,
+            "name": "Python Basics",
+            "issuer": "University of Michigan",
+            "date": "August 2020",
+            "category": "Programming",
+            "description": "Covered foundational Python programming as part of a specialization.",
+            "skills": [
+                "Python",
+                "Functions",
+                "Loops"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/9Z7Y2TE2X2BS"
+        },
+        {
+            "id": 19,
+            "name": "Create Your First Chatbot with Rasa and Python",
+            "issuer": "Deprecated Guided Projects",
+            "date": "July 2020",
+            "category": "AI",
+            "description": "Built a basic chatbot using Rasa and Python.",
+            "skills": [
+                "Chatbots",
+                "Rasa",
+                "Python"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/9LURF9FJGJ27"
+        },
+        {
+            "id": 20,
+            "name": "Practical Introduction to the Command Line",
+            "issuer": "Coursera Project Network",
+            "date": "July 2020",
+            "category": "Operating Systems",
+            "description": "Navigated and manipulated files using UNIX/Linux command-line interface.",
+            "skills": [
+                "Linux CLI",
+                "Shell Commands"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/MMTLZS8J6DXK"
+        },
+        {
+            "id": 21,
+            "name": "AI For Everyone",
+            "issuer": "DeepLearning.AI",
+            "date": "April 2020",
+            "category": "AI",
+            "description": "Non-technical introduction to AI concepts, use cases, and implications.",
+            "skills": [
+                "AI Basics",
+                "Ethics",
+                "Business Applications"
+            ],
+            "url": "https://www.coursera.org/account/accomplishments/verify/3XKVLKMAT3S3"
+        }
+    ],
+    "courseCategories": [
+        {
+            "id": "Software",
+            "name": "Software Engineering"
+        },
+        {
+            "id": "algorithms",
+            "name": "Algorithms & Theory"
+        },
+        {
+            "id": "ai_ml",
+            "name": "AI & Machine Learning"
+        },
+        {
+            "id": "Numerical",
+            "name": "Mathematical & Computational Foundations"
+        },
+        {
+            "id": "data",
+            "name": "Big Data/Cloud Computing"
+        }
+    ],
+    "onlineCourses": [
+        {
+            "id": 1,
+            "name": "Software Engineering Management, Maintenance, and Quality Assurance",
+            "platform": "University",
+            "category": "Software",
+            "duration": "Semester 1",
+            "completionDate": "2023",
+            "skills": [
+                "Software Engineering Management",
+                "Software Quality Assurance",
+                "Software Maintenance"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 2,
+            "name": "Design and Analysis of Algorithms",
+            "platform": "University",
+            "category": "algorithms",
+            "duration": "Semester 1",
+            "completionDate": "2023",
+            "skills": [
+                "Algorithm Design",
+                "Complexity Analysis",
+                "Problem Solving"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 3,
+            "name": "Data Analysis and Modeling Techniques",
+            "platform": "University",
+            "category": "algorithms",
+            "duration": "Semester 1",
+            "completionDate": "2023",
+            "skills": [
+                "Data Analysis",
+                "Statistical Modeling",
+                "Data Visualization"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 4,
+            "name": "Cloud Computing and Big Data",
+            "platform": "University",
+            "category": "data",
+            "duration": "Semester 3",
+            "completionDate": "2024",
+            "skills": [
+                "Distributed Computing",
+                "Big Data Technologies",
+                "Data Processing"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 5,
+            "name": "Data Mining",
+            "platform": "University",
+            "category": "data",
+            "duration": "Semester 2",
+            "completionDate": "2024",
+            "skills": [
+                "Data Mining Algorithms",
+                "Pattern Recognition",
+                "Predictive Analytics"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 6,
+            "name": "Machine Learning",
+            "platform": "University",
+            "category": "ai_ml",
+            "duration": "Semester 2",
+            "completionDate": "2024",
+            "skills": [
+                "Supervised Learning",
+                "Neural Networks",
+                "Model Evaluation"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 7,
+            "name": "Artificial Intelligence",
+            "platform": "University",
+            "category": "ai_ml",
+            "duration": "Semester 2",
+            "completionDate": "2024",
+            "skills": [
+                "AI Algorithms",
+                "Knowledge Representation",
+                "Intelligent Systems"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 8,
+            "name": "Web Data Management",
+            "platform": "University",
+            "category": "data",
+            "duration": "Semester 3",
+            "completionDate": "2024",
+            "skills": [
+                "Web Technologies",
+                "Data Integration",
+                "Information Retrieval & Practical Skills"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 9,
+            "name": "Numerical Methods",
+            "platform": "University",
+            "category": "Numerical",
+            "duration": "Semester 3",
+            "completionDate": "2024",
+            "skills": [
+                "Numerical Solving & Modeling",
+                "Optimization & Interpolation",
+                "Iterative & Advanced Techniques"
+            ],
+            "url": "#"
+        },
+        {
+            "id": 10,
+            "name": "Special Topics in Advanced Computer Science",
+            "platform": "University",
+            "category": "ai_ml",
+            "duration": "Semester 4",
+            "completionDate": "2024",
+            "skills": [
+                "Technical and Research Skills",
+                "Project Development",
+                "Presentation"
+            ],
+            "url": "#"
+        }
+    ],
+    "stats": [
+        {
+            "value": "6+",
+            "label": "Years of Education",
+            "color": "from-primary/20 to-primary/5"
+        },
+        {
+            "value": "5+",
+            "label": "Certifications",
+            "color": "from-secondary/20 to-secondary/5"
+        },
+        {
+            "value": "10+",
+            "label": "Courses",
+            "color": "from-green-500/20 to-green-500/5"
+        },
+        {
+            "value": "100+",
+            "label": "Hours of Learning",
+            "color": "from-blue-500/20 to-blue-500/5"
+        }
+    ]
+}

@@ -1,0 +1,240 @@
+{
+  "sectionInfo": {
+      "title": "Featured Projects",
+      "description": "A showcase of my most significant projects, demonstrating my skills and expertise in software development, AI, and cloud solutions."
+  },
+  "projects": [
+      {
+          "title": "Academica – Academic Networking Platform",
+          "description": "A social-academic platform built for students and mentors to collaborate, use resources,apply for jobs and connect based on academic interests.",
+          "images": [
+              "/images/projects/academica/Picture1.jpg",
+              "/images/projects/academica/Picture2.jpg",
+              "/images/projects/academica/Picture3.jpg",
+              "/images/projects/academica/Picture4.jpg",
+              "/images/projects/academica/Picture5.jpg",
+              "/images/projects/academica/Picture6.jpg",
+              "/images/projects/academica/Picture7.jpg",
+              "/images/projects/academica/Picture8.jpg",
+              "/images/projects/academica/Picture9.jpg",
+              "/images/projects/academica/Picture10.jpg",
+              "/images/projects/academica/Picture11.jpg"
+          ],
+          "technologies": [
+              "React",
+              "Node.js",
+              "Next.js",
+              "REST API"
+          ],
+          "githubUrl": "",
+          "Url": "",
+          "keyFeatures": [
+              "User authentication and personalized feeds",
+              "Resource sharing and academic discussion forums",
+              "Integrated notifications and user profile management"
+          ],
+          "categories": [
+              "Full Stack",
+              "Social Platform"
+          ]
+      },
+      {
+          "title": "Ohiohoo Skincare – Cosmetic E-commerce Website",
+          "description": "A complete skincare product website with user-friendly UI, skincare APIs, and Selenium testing for automation.",
+          "images": [
+              "/images/projects/ohiohoo/1.png",
+              "/images/projects/ohiohoo/2.png",
+              "/images/projects/ohiohoo/3.png",
+              "/images/projects/ohiohoo/4.png",
+              "/images/projects/ohiohoo/5.png",
+              "/images/projects/ohiohoo/6.png",
+              "/images/projects/ohiohoo/7.png",
+              "/images/projects/ohiohoo/8.png",
+              "/images/projects/ohiohoo/9.png",
+              "/images/projects/ohiohoo/10.png",
+              "/images/projects/ohiohoo/11.png"
+          ],
+          "technologies": [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "REST APIs",
+              "Selenium"
+          ],
+          "githubUrl": "https://github.com/ShriVarshaaSakhamuri1/ohiohooskincare",
+          "Url": "",
+          "keyFeatures": [
+              "Responsive UI with interactive product catalog",
+              "API integration for skincare product listings",
+              "Automated testing suite using Selenium"
+          ],
+          "categories": [
+              "Full Stack",
+              "Automation"
+          ]
+      },
+      {
+          "title": "MIME Recognition for Indian Sign Language",
+          "description": "A user-friendly interface for recognizing and translating Indian sign language using deep learning models.",
+          "images": [
+              "/nopreview.png"
+          ],
+          "technologies": [
+              "Python",
+              "TensorFlow",
+              "Keras",
+              "Flask",
+              "CNN"
+          ],
+          "githubUrl": "",
+          "Url": "https://ieeexplore.ieee.org/document/10064616",
+          "keyFeatures": [
+              "Real-time sign detection using webcam feed",
+              "Bi-directional translation between text and signs",
+              "Trained custom CNN for accuracy"
+          ],
+          "categories": [
+              "AI/ML",
+              "Accessibility"
+          ]
+      },
+      {
+          "title": "Secure File Transfer using Blockchain and Cryptography",
+          "description": "Designed a decentralized file-sharing solution using blockchain with AES and RSA for encryption.",
+          "images": [
+              "/nopreview.png"
+          ],
+          "technologies": [
+              "Python",
+              "Blockchain",
+              "AES",
+              "RSA",
+              "Flask"
+          ],
+          "githubUrl": "",
+          "Url": "https://link.springer.com/chapter/10.1007/978-981-99-2742-5_49",
+          "keyFeatures": [
+              "Secure file transmission using cryptographic protocols",
+              "Blockchain ledger to ensure tamper-proof records",
+              "Decentralized data access control"
+          ],
+          "categories": [
+              "Security",
+              "Blockchain"
+          ]
+      },
+      {
+          "title": "Image Classification using CNN (CIFAR-10)",
+          "description": "Trained a convolutional neural network model using PyTorch to classify CIFAR-10 images.",
+          "images": [
+              "/images/projects/CIFAR/1.png",
+              "/images/projects/CIFAR/2.png",
+              "/images/projects/CIFAR/3.png",
+              "/images/projects/CIFAR/4.png",
+              "/images/projects/CIFAR/5.png"
+          ],
+          "technologies": [
+              "PyTorch",
+              "CNN",
+              "Python",
+              "Matplotlib"
+          ],
+          "githubUrl": "",
+          "Url": "",
+          "keyFeatures": [
+              "Custom CNN model from scratch",
+              "Achieved >70% validation accuracy",
+              "Plotted learning curves for model tuning"
+          ],
+          "categories": [
+              "AI/ML",
+              "Computer Vision"
+          ]
+      },
+      {
+          "title": "End-to-End CI/CD Pipeline Implementation on AWS",
+          "description": "Deployed a web application on AWS with continuous integration and delivery setup using DevOps tools.",
+          "images": [
+              "/images/projects/CICD/1.png",
+              "/images/projects/CICD/2.png",
+              "/images/projects/CICD/3.png",
+              "/images/projects/CICD/4.png",
+              "/images/projects/CICD/5.png",
+              "/images/projects/CICD/6.png",
+              "/images/projects/CICD/7.png"
+          ],
+          "technologies": [
+              "AWS EC2",
+              "CodePipeline",
+              "CodeDeploy",
+              "CodeBuild",
+              "GitHub Actions",
+              "AWS S3",
+              "CloudFormation",
+              "Java-Maven application"
+          ],
+          "githubUrl": "https://github.com/ShriVarshaaSakhamuri1/nextwork-web-project",
+          "Url": "",
+          "keyFeatures": [
+              "Automated end-to-end deployment with rollback support",
+              "Integrated GitHub repo with CodePipeline for live deployments",
+              "Infrastructure-as-Code setup using CloudFormation templates"
+          ],
+          "categories": [
+              "DevOps",
+              "Cloud"
+          ]
+      },
+      {
+          "title": "Convolutional Networks for Biomedical Image Segmentation",
+          "description": "Implemented a convolutional neural network to perform precise biomedical image segmentation, targeting enhanced diagnostics in healthcare applications.",
+          "images": [
+              "/nopreview.png"
+          ],
+          "technologies": [
+              "Python",
+              "Keras",
+              "TensorFlow",
+              "U-Net",
+              "OpenCV"
+          ],
+          "githubUrl": "",
+          "Url": "",
+          "keyFeatures": [
+              "Designed and trained CNN model for pixel-wise segmentation of biomedical images",
+              "Preprocessed and augmented datasets to improve model generalization",
+              "Validated model using real-world biomedical imaging datasets for healthcare applicability"
+          ],
+          "categories": [
+              "AI/ML",
+              "Healthcare AI"
+          ]
+      },
+      {
+          "title": "Secure Transfer of Files within Organization using AES, RSA, and Decentralized Blockchain",
+          "description": "Built a secure communication framework for enterprise file transfer using hybrid cryptography and blockchain for decentralized logging and validation.",
+          "images": [
+              "/nopreview.png"
+          ],
+          "technologies": [
+              "Python",
+              "AES",
+              "RSA",
+              "Blockchain",
+              "Cryptography"
+          ],
+          "githubUrl": "",
+          "Url": "",
+          "keyFeatures": [
+              "Utilized AES for fast symmetric encryption and RSA for secure key exchange",
+              "Incorporated a decentralized blockchain structure for tamper-proof logging",
+              "Enhanced internal data security and traceability within organizations"
+          ],
+          "categories": [
+              "Security",
+              "Blockchain",
+              "Cryptography"
+          ]
+      }
+  ]
+}

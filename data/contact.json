@@ -1,0 +1,31 @@
+{
+  "contactInfo": {
+    "title": "GET IN TOUCH",
+    "heading": "Let's Work Together",
+    "description": "Open to connect — to gain hands-on experience and grow my skills.",
+    "email": {
+      "label": "Email",
+      "address": "shrivarshaasakhamuri@gmail.com"
+    }
+  },
+  "formFields": {
+    "name": {
+      "label": "Full Name",
+      "placeholder": "John Doe",
+      "icon": "User"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "john@example.com",
+      "icon": "AtSign"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "What's this about?"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell me about your project..."
+    }
+  }
+}

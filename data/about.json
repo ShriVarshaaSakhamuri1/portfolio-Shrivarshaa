@@ -1,0 +1,99 @@
+{
+  "overview": {
+    "name": "Shrivarshaa Sakhamuri",
+    "title": "Frontend Developer & DevOps Engineer",
+    "location": "Dallas, TX",
+    "description": [
+      "I'm an AWS Certified Solutions Architect Associate and aspiring Cloud & DevOps Engineer with a strong foundation in front-end development, cloud computing, and machine learning.",
+      "Currently pursuing my Master’s in Computer Science at UT Arlington with a 4.0 GPA, I specialize in Artificial Intelligence and Cloud Computing, blending technical knowledge with real-world applications.",
+      "My journey includes hands-on experience as a DevOps and AWS intern, where I designed and deployed cloud-native solutions using EC2, S3, Lambda, and Kubernetes, as well as developed scalable Pega-based automation systems. On the front end, I’ve built dynamic web applications using React, Next.js, and Node.js, and have worked on full-stack academic and e-commerce projects integrating secure login, real-time features, and end-to-end testing."
+    ],
+    "stats": [
+      {
+        "value": 1,
+        "label": "Years Experience",
+        "icon": "Briefcase"
+      },
+      {
+        "value": 9,
+        "label": "Projects Completed",
+        "icon": "CheckCircle"
+      },
+      {
+        "value": 50,
+        "label": "Iterations",
+        "icon": "Zap"
+      },
+      {
+        "value": 8,
+        "label": "Domains",
+        "icon": "Globe"
+      }
+    ],
+    "technologies": {
+      "frontend": ["React.js", "Next.js", "HTML", "CSS", "UI/UX Design", "Figma"],
+      "backend": ["Node.js", "FastAPI", "MySQL", "RestAPIs","Pega BPM"],
+      "testing": ["Selenium", "Software Testing", "Automation Testing"],
+      "ai_ml": ["Machine Learning", "Keras", "OpenCV", "TensorFlow", "CNN", "R"],
+      "devops": ["AWS", "Docker", "Kubernetes", "CloudFormation", "Linux"],
+      "security": ["Cryptography", "Blockchain", "AES", "RSA", "SHA-256"]
+    }
+  },
+  "tools": [
+    "Git",
+    "AWS",
+    "Linux",
+    "Apache",
+    "npm",
+    "Pega",
+    "XAMPP",
+    "Postman",
+    "VS Code",
+    "GitHub Actions",
+    "Jira"
+  ],
+  "softSkills": [
+    {
+      "name": "Problem Solving",
+      "icon": "Lightbulb"
+    },
+    {
+      "name": "Communication",
+      "icon": "Globe"
+    },
+    {
+      "name": "Teamwork",
+      "icon": "Heart"
+    },
+    {
+      "name": "Adaptability",
+      "icon": "Zap"
+    },
+    {
+      "name": "Attention to detail",
+      "icon": "Zap"
+    }
+  ],
+  "hobbies": [
+    {
+      "label": "Cooking",
+      "icon": "Utensils"
+    },
+    {
+      "label": "Reading",
+      "icon": "BookOpen"
+    },
+    {
+      "label": "Working Out",
+      "icon": "Activity"
+    },
+    {
+      "label": "Netflix",
+      "icon": "Clapperboard"
+    },
+    {
+      "label": "Gaming",
+      "icon": "Gamepad"
+    }
+  ]
+}
