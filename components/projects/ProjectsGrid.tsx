@@ -6,7 +6,7 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
-  liveUrl: string;
+  Url: string;
   githubUrl: string;
   keyFeatures?: string[];
 }

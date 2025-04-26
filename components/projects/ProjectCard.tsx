@@ -16,7 +16,7 @@ interface Project {
   images: string[];
   technologies: string[];
   githubUrl: string;
-  liveUrl?: string;
+  Url?: string;
   keyFeatures: string[];
   categories: string[];
 }
@@ -297,15 +297,15 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
                 {/* Links */}
                 <div className="flex gap-2 pt-1">
-                  {project.liveUrl && (
+                  {project.Url && (
                     <a
-                      href={project.liveUrl}
+                      href={project.Url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-xs bg-primary text-primary-foreground hover:bg-primary/90 px-2.5 py-1 rounded"
                     >
                       <ExternalLink className="h-3 w-3" />
-                      View Live
+                      View URL
                     </a>
                   )}
                   {project.githubUrl && (

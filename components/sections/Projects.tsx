@@ -11,7 +11,7 @@ interface Project {
   images: string[];
   technologies: string[];
   githubUrl: string;
-  liveUrl: string;
+  Url: string;
   keyFeatures: string[];
   categories: string[];
 }

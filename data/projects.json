@@ -92,7 +92,8 @@
           "keyFeatures": [
               "Real-time sign detection using webcam feed",
               "Bi-directional translation between text and signs",
-              "Trained custom CNN for accuracy"
+              "Trained custom CNN for accuracy",
+              "Published in IEEE"
           ],
           "categories": [
               "AI/ML",
@@ -117,7 +118,8 @@
           "keyFeatures": [
               "Secure file transmission using cryptographic protocols",
               "Blockchain ledger to ensure tamper-proof records",
-              "Decentralized data access control"
+              "Decentralized data access control",
+              "Published in Springer"
           ],
           "categories": [
               "Security",
@@ -190,7 +192,11 @@
           "title": "Convolutional Networks for Biomedical Image Segmentation",
           "description": "Implemented a convolutional neural network to perform precise biomedical image segmentation, targeting enhanced diagnostics in healthcare applications.",
           "images": [
-              "/nopreview.png"
+              "/images/projects/UNET/1.png",
+              "/images/projects/UNET/2.png",
+              "/images/projects/UNET/3.png",
+              "/images/projects/UNET/4.png",
+              "/images/projects/UNET/5.png"
           ],
           "technologies": [
               "Python",
@@ -199,7 +205,7 @@
               "U-Net",
               "OpenCV"
           ],
-          "githubUrl": "",
+          "githubUrl": "https://github.com/ShriVarshaaSakhamuri1/U-NET-biomedical",
           "Url": "",
           "keyFeatures": [
               "Designed and trained CNN model for pixel-wise segmentation of biomedical images",
