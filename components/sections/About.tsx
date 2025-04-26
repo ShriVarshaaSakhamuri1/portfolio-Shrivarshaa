@@ -93,15 +93,15 @@ export default function AboutPage() {
       const interval = setInterval(() => {
         setAnimatedNumbers((prev) => {
           const newNumbers = { ...prev };
-          if (newNumbers.projects < 14) newNumbers.projects += 1;
-          if (newNumbers.experience < 4) newNumbers.experience += 0.1;
-          if (newNumbers.iterations < 95) newNumbers.iterations += 2;
+          if (newNumbers.projects < 9) newNumbers.projects += 1;
+          if (newNumbers.experience < 0.9) newNumbers.experience += 0.1;
+          if (newNumbers.iterations < 50) newNumbers.iterations += 2;
           if (newNumbers.domains < 8) newNumbers.domains += 1;
 
           if (
-            newNumbers.projects === 14 &&
-            newNumbers.experience >= 4 &&
-            newNumbers.iterations === 95 &&
+            newNumbers.projects === 9 &&
+            newNumbers.experience >= 1 &&
+            newNumbers.iterations === 50 &&
             newNumbers.domains === 8
           ) {
             clearInterval(interval);
