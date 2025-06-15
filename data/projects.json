@@ -142,12 +142,13 @@
               "Python",
               "Matplotlib"
           ],
-          "githubUrl": "",
+          "githubUrl": "https://github.com/ShriVarshaaSakhamuri1/Patient-Recommendation-System-Based-on-Accident-Severity",
           "Url": "",
           "keyFeatures": [
-              "Custom CNN model from scratch",
-              "Achieved >70% validation accuracy",
-              "Plotted learning curves for model tuning"
+              "Built a deep learning model using CNN to classify images from the CIFAR-10 dataset",
+              "The model was implemented in PyTorch and trained using GPU/CPU for improved efficiency",
+              "Plotted learning curves and explored the impact of different learning rates and training durations",
+              "Implemented full ML pipeline: data preprocessing, model training, evaluation, and deployment, including saving/loading trained models for reuse and inference"
           ],
           "categories": [
               "AI/ML",
@@ -208,9 +209,9 @@
           "githubUrl": "https://github.com/ShriVarshaaSakhamuri1/U-NET-biomedical",
           "Url": "",
           "keyFeatures": [
-              "Designed and trained CNN model for pixel-wise segmentation of biomedical images",
-              "Preprocessed and augmented datasets to improve model generalization",
-              "Validated model using real-world biomedical imaging datasets for healthcare applicability"
+              "Developed an AI-based Patient Recommendation System using CNN to classify injury type and predict severity from accident images",
+              "Compared performance with SVM, Random Forest, and Decision Tree to evaluate model effectiveness",
+              "Achieved 100% accuracy with CNN and integrated hospital recommendation based on injury classification and severity"
           ],
           "categories": [
               "AI/ML",
