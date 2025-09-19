@@ -17,13 +17,7 @@ export function SocialLinks() {
       ),
       hoverColor: "group-hover:border-blue-500 group-hover:bg-blue-500/10",
     },
-    {
-      href: "mailto:shrivarshaasakhamuri@gmail.com",
-      icon: (
-        <Mail className="h-5 w-5 text-muted-foreground group-hover:text-secondary transition-colors duration-300" />
-      ),
-      hoverColor: "group-hover:border-secondary group-hover:bg-secondary/10",
-    },
+    
   ];
 
   return (

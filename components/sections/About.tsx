@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import {
   Code,
@@ -32,10 +31,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import {
-  StatCard,
   SkillBar,
   BookIcon,
   Mountain,
@@ -56,64 +53,6 @@ interface Overview {
 
 export default function AboutPage() {
   const [activeTab, setActiveTab] = useState("overview");
-  const [animatedNumbers, setAnimatedNumbers] = useState({
-    projects: 0,
-    experience: 0,
-    iterations: 0,
-    domains: 0,
-  });
-  const statsRef = useRef<HTMLDivElement>(null);
-  const [statsInView, setStatsInView] = useState(false);
-
-  // Animate stats when in view
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setStatsInView(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (statsRef.current) {
-      observer.observe(statsRef.current);
-    }
-
-    return () => {
-      if (statsRef.current) {
-        observer.unobserve(statsRef.current);
-      }
-    };
-  }, []);
-
-  // Animate numbers
-  useEffect(() => {
-    if (statsInView) {
-      const interval = setInterval(() => {
-        setAnimatedNumbers((prev) => {
-          const newNumbers = { ...prev };
-          if (newNumbers.projects < 9) newNumbers.projects += 1;
-          if (newNumbers.experience < 0.9) newNumbers.experience += 0.1;
-          if (newNumbers.iterations < 50) newNumbers.iterations += 2;
-          if (newNumbers.domains < 8) newNumbers.domains += 1;
-
-          if (
-            newNumbers.projects === 9 &&
-            newNumbers.experience >= 1 &&
-            newNumbers.iterations === 50 &&
-            newNumbers.domains === 8
-          ) {
-            clearInterval(interval);
-          }
-
-          return newNumbers;
-        });
-      }, 14);
-
-      return () => clearInterval(interval);
-    }
-  }, [statsInView]);
 
   // Animation variants
   const containerVariants = {
@@ -141,7 +80,7 @@ export default function AboutPage() {
     <div className="flex min-h-screen bg-background">
       {/* Main Content */}
       <div className="flex-1 relative">
-        {/* Smaller background elements */}
+        {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden -z-10">
           <div className="absolute top-1/4 left-1/4 w-56 h-56 bg-primary/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/3 right-1/4 w-36 h-36 bg-secondary/5 rounded-full blur-3xl"></div>
@@ -149,6 +88,7 @@ export default function AboutPage() {
         </div>
 
         <main className="relative py-8 px-3 md:px-4 max-w-5xl mx-auto">
+          {/* Page Title */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -188,7 +128,7 @@ export default function AboutPage() {
                 animate="visible"
                 className="grid md:grid-cols-3 gap-4 mb-6"
               >
-                {/* Smaller Profile Image */}
+                {/* Profile Image */}
                 <motion.div
                   variants={itemVariants}
                   className="md:col-span-1 flex justify-center"
@@ -204,7 +144,7 @@ export default function AboutPage() {
                   </div>
                 </motion.div>
 
-                {/* More compact Bio */}
+                {/* Bio Section */}
                 <motion.div variants={itemVariants} className="md:col-span-2">
                   <Card className="h-full">
                     <CardHeader className="p-3">
@@ -237,7 +177,7 @@ export default function AboutPage() {
                     </CardContent>
                     <CardFooter className="p-3">
                       <Link
-                        href="/Shrivarshaa_Sakhamuri_resume.pdf"
+                        href="SHRIVARSHAA SAKHAMURI (2).pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -252,48 +192,6 @@ export default function AboutPage() {
                       </Link>
                     </CardFooter>
                   </Card>
-                </motion.div>
-              </motion.div>
-
-              {/* Smaller Stats Section */}
-              <motion.div
-                ref={statsRef}
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-                className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6"
-              >
-                <motion.div variants={itemVariants}>
-                  <StatCard
-                    icon={<Code className="h-8 w-8 text-primary" />}
-                    value={animatedNumbers.projects}
-                    label="Projects Completed"
-                    color="from-primary/20 to-primary/5"
-                  />
-                </motion.div>
-                <motion.div variants={itemVariants}>
-                  <StatCard
-                    icon={<Briefcase className="h-8 w-8 text-secondary" />}
-                    value={animatedNumbers.experience.toFixed(1)}
-                    label="Years of Experience"
-                    color="from-secondary/20 to-secondary/5"
-                  />
-                </motion.div>
-                <motion.div variants={itemVariants}>
-                  <StatCard
-                    icon={<Zap className="h-8 w-8 text-yellow-500" />}
-                    value={animatedNumbers.iterations}
-                    label="Iterations"
-                    color="from-yellow-500/20 to-yellow-500/5"
-                  />
-                </motion.div>
-                <motion.div variants={itemVariants}>
-                  <StatCard
-                    icon={<Globe className="h-8 w-8 text-blue-500" />}
-                    value={animatedNumbers.domains.toFixed(0)}
-                    label="Domains"
-                    color="from-blue-500/20 to-blue-500/5"
-                  />
                 </motion.div>
               </motion.div>
             </TabsContent>
@@ -320,9 +218,9 @@ export default function AboutPage() {
                           users.
                         </p>
                         <p className="text-muted-foreground">
-                        "When I'm not in front of a computer, you can find me 
-                        hanging out on fun dates with friends, binge-watching Netflix, 
-                        or heading out for a good time.
+                          When I'm not in front of a computer, you can find me
+                          hanging out with friends, binge-watching Netflix, or
+                          heading out for a fun time.
                         </p>
                       </CardContent>
                     </Card>
@@ -343,8 +241,8 @@ export default function AboutPage() {
                               <span className="font-medium text-foreground">
                                 User-Centered Design:
                               </span>{" "}
-                              I’m all about crafting interfaces that feel like 
-                              second nature—clean, intuitive, friendly, and fun to use!
+                              Crafting interfaces that are clean, intuitive,
+                              and fun to use!
                             </p>
                           </li>
                           <li className="flex items-start gap-2">
@@ -356,7 +254,7 @@ export default function AboutPage() {
                                 Clean Code:
                               </span>{" "}
                               I write maintainable, well-documented code that
-                              follows best practices and design patterns.
+                              follows best practices.
                             </p>
                           </li>
                           <li className="flex items-start gap-2">
@@ -367,8 +265,8 @@ export default function AboutPage() {
                               <span className="font-medium text-foreground">
                                 Continuous Learning:
                               </span>{" "}
-                              I love exploring new technologies and challenging myself—continuous 
-                              learning keeps things exciting and keeps me growing.
+                              Exploring new technologies and challenging myself
+                              to grow as a developer.
                             </p>
                           </li>
                           <li className="flex items-start gap-2">
@@ -379,8 +277,8 @@ export default function AboutPage() {
                               <span className="font-medium text-foreground">
                                 Problem Solving:
                               </span>{" "}
-                              I enjoy tackling complex challenges and finding
-                              efficient, elegant solutions.
+                              Tackling complex challenges with elegant, efficient
+                              solutions.
                             </p>
                           </li>
                         </ul>
@@ -389,6 +287,7 @@ export default function AboutPage() {
                   </motion.div>
                 </div>
 
+                {/* Hobbies */}
                 <motion.div variants={itemVariants} className="mb-6">
                   <h3 className="text-base font-semibold mb-3 text-center">
                     Interests & Hobbies
@@ -405,7 +304,6 @@ export default function AboutPage() {
                         Activity,
                         Clapperboard,
                         Gamepad,
-                  
                       };
 
                       const IconComponent = IconMap[hobby.icon];
