@@ -441,22 +441,22 @@
   ],
   "stats": [
     {
-      "value": "12+",
+      "value": "7+",
       "label": "Programming Languages",
       "color": "from-primary/20 to-primary/5"
     },
     {
-      "value": "5+",
+      "value": "3+",
       "label": "Database Systems",
       "color": "from-blue-500/20 to-blue-500/5"
     },
     {
-      "value": "16+",
+      "value": "6+",
       "label": "Web Technologies",
       "color": "from-secondary/20 to-secondary/5"
     },
     {
-      "value": "30+",
+      "value": "10+",
       "label": "Development Tools",
       "color": "from-secondary/20 to-secondary/5"
     }
