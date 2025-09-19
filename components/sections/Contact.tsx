@@ -18,7 +18,7 @@ export function ContactSection() {
         </h1>
         <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
         <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-          Interested in discussing internship or full-time opportunities? Feel
+          Interested in discussing opportunities? Feel
           free to reach out and I'll get back to you within 24 hours.
         </p>
       </motion.div>

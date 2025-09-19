@@ -5,43 +5,55 @@
   },
   "jobs": [
     {
-      "title": "Graduate Teaching Assistant - Numerical Methods",
-      "company": "University of Texas at Arlington",
-      "location": "Arlington, TX, USA",
-      "period": "Jan 2025 - Present",
-      "type": "parttime",
-      "description": "Assisting students in understanding numerical computation techniques and programming applications in engineering contexts.",
+      "title": "Software Developer",
+      "company": "CitiGroup",
+      "location": "Texas, USA",
+      "period": "Dec 2024 - Present",
+      "type": "fulltime",
+      "description": "Building and maintaining high-performance backend services and dashboards for banking applications, ensuring security and scalability.",
       "technologies": [
         "Python",
-        "Numerical Methods",
-        "MATLAB",
-        "Teaching",
-        "Problem Solving"
+        "Java",
+        "React.js",
+        "Redis",
+        "AWS",
+        "MySQL",
+        "NoSQL",
+        "CloudFormation",
+        "CI/CD"
       ],
       "achievements": [
-        "Graded, tutored, and guided 30+ students in numerical analysis and code implementation",
-        "Helped improve student scores by 25% through personalized tutoring and support",
-        "Liaised between faculty and students, ensuring smooth communication and timely feedback"
+        "Built and managed 4+ backend services using Python and Java to support banking applications, processing 20,000+ secure daily transactions with high availability.",
+        "Created reusable React.js components and implemented Redis caching, improving dashboard performance and reducing page load times by 35%.",
+        "Automated AWS deployments with CloudFormation and CI/CD pipelines, shortening release cycles from 2 weeks to 3 days.",
+        "Integrated MySQL and NoSQL databases into transaction monitoring systems, boosting query speed by 40% and enhancing fraud detection accuracy.",
+        "Collaborated with a 6-member cross-functional team to develop compliance features, achieving 100% audit readiness for internal banking applications."
       ]
     },
     {
-      "title": "Pega Developer Intern",
-      "company": "Virtusa",
+      "title": "Software Developer Associate",
+      "company": "Cognizant",
       "location": "Remote",
-      "period": "Jan 2023 - Apr 2023",
-      "type": "internship",
-      "description": "Developed a Pega-based platform to streamline service bookings and automate customer workflows.",
+      "period": "Jul 2021 - Jun 2023",
+      "type": "fulltime",
+      "description": "Developed scalable web applications and cloud solutions for retail and financial sector clients, modernizing legacy systems and improving performance.",
       "technologies": [
-        "Java",
-        "Pega",
-        "HTML/CSS",
-        "Automation",
-        "UI/UX"
+        "React.js",
+        "Node.js",
+        "Django",
+        "Python",
+        "PHP",
+        "AWS",
+        "Databricks",
+        "Selenium",
+        "JUnit",
+        "MySQL"
       ],
       "achievements": [
-        "Built scalable service booking system with rule-based process automation",
-        "Reduced booking processing time by 30% through workflow optimization",
-        "Enhanced system efficiency by 40% using declarative rules and UI improvements"
+        "Delivered 12+ scalable web applications using React.js, Node.js, and Django, serving 50,000+ active users across retail and financial sectors.",
+        "Modernized legacy PHP systems by migrating them to Python/Django, cutting maintenance costs by 25% and reducing production issues by 30%.",
+        "Designed and implemented 50+ automated regression tests with Selenium and JUnit, boosting test coverage by 60% and significantly lowering release defects.",
+        "Built and deployed cloud-based applications on AWS and Databricks, enabling the processing of 10M+ record datasets and generating analytical reports in under 5 minutes."
       ]
     },
     {
@@ -50,21 +62,24 @@
       "location": "Remote",
       "period": "Nov 2022 - Jan 2023",
       "type": "internship",
-      "description": "Worked on deploying and managing cloud infrastructure using core AWS services in a virtual internship program.",
+      "description": "Designed and deployed secure, fault-tolerant cloud systems using core AWS services with a focus on automation and monitoring.",
       "technologies": [
         "AWS EC2",
+        "Lambda",
+        "ECS",
         "S3",
         "VPC",
-        "SNS",
-        "Lambda",
-        "Docker",
+        "DynamoDB",
+        "API Gateway",
         "CloudFormation",
-        "Kubernetes"
+        "CloudWatch"
       ],
       "achievements": [
-        "Configured and deployed infrastructure using EC2, S3, and CloudFormation",
-        "Gained hands-on experience with containerized services and Kubernetes orchestration",
-        "Collaborated with virtual teams to complete cloud project milestones in a 10-week internship"
+        "Engineered high-availability cloud systems with secure, fault-tolerant setups, reducing latency by 35%.",
+        "Developed serverless applications using API Gateway, IAM, and DynamoDB for efficient cloud-native workflows.",
+        "Automated provisioning of VPCs, EC2 instances, and IAM roles using Infrastructure-as-Code templates with AWS CloudFormation.",
+        "Integrated RESTful API design principles to build scalable microservices and monitored distributed workloads using AWS CloudWatch.",
+        "Implemented proactive troubleshooting measures with alarms and log filters to maintain compliance and encryption standards."
       ]
     }
   ]

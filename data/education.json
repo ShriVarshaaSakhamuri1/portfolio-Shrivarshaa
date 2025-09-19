@@ -41,7 +41,7 @@
     {
       "id": 2,
       "title": "BTech in Computer Science and Engineering",
-      "institution": "Siddhartha Academy of Higher Education",
+      "institution": "Velagapudi Ramakrishna Siddhartha Engineering College",
       "location": "Vijayawada, India",
       "year": "Jun 2019 - May 2023",
       "description": "Bachelor of Technology in Computer Science and Engineering with focus on Design logic,datastructures ,Computation,Programming Languages and Machine Learning.",
@@ -130,21 +130,9 @@
             ],
             "url": "https://www.credly.com/badges/5d3f2e5a-55d9-4af6-b533-4f0ef46cd42e"
         },
+        
         {
             "id": 5,
-            "name": "Introduction to Cybersecurity",
-            "issuer": "Cisco",
-            "date": "2022",
-            "category": "Security",
-            "description": "Threats, attack vectors, and cybersecurity basics.",
-            "skills": [
-                "Cybersecurity",
-                "Threat Analysis"
-            ],
-            "url": "https://www.credly.com/badges/72800230-9321-45fe-a650-9d66bc39f13c"
-        },
-        {
-            "id": 6,
             "name": "NDG Linux Essentials",
             "issuer": "Cisco Networking Academy",
             "date": "2022",
@@ -158,7 +146,7 @@
             "url": "./images/certificates/1.pdf"
         },
         {
-            "id": 7,
+            "id": 6,
             "name": "Designing User Interfaces and Experiences (UI/UX)",
             "issuer": "IBM",
             "date": "January 2025",
@@ -174,7 +162,7 @@
             "url": "https://www.coursera.org/account/accomplishments/verify/77EKATK2ETSR"
         },
         {
-            "id": 8,
+            "id": 7,
             "name": "Introduction to Software Engineering (with Honors)",
             "issuer": "IBM",
             "date": "January 2025",
@@ -191,7 +179,7 @@
             "url": "https://www.coursera.org/account/accomplishments/verify/C3SZEEWYRZNP"
         },
         {
-            "id": 9,
+            "id": 8,
             "name": "Getting Started with Front-End and Web Development (with Honors)",
             "issuer": "IBM",
             "date": "December 2024",
@@ -207,7 +195,7 @@
             "url": "https://www.coursera.org/account/accomplishments/verify/BL19XFSB2TZ4"
         },
         {
-            "id": 10,
+            "id": 9,
             "name": "Hand Gesture Recognition using TensorFlow and Keras",
             "issuer": "Deprecated Guided Projects",
             "date": "February 2022",
@@ -223,7 +211,7 @@
             "url": "https://www.coursera.org/account/accomplishments/verify/JNEN5T7TJ82Y"
         },
         {
-            "id": 11,
+            "id": 10,
             "name": "Databases and SQL for Data Science with Python",
             "issuer": "IBM",
             "date": "November 2021",
@@ -239,7 +227,7 @@
             "url": "https://www.coursera.org/account/accomplishments/verify/AP5YCZTDMMCF"
         },
         {
-            "id": 12,
+            "id": 11,
             "name": "Create and Design Digital Products using Canva",
             "issuer": "Coursera Project Network",
             "date": "July 2021",
@@ -253,39 +241,9 @@
             ],
             "url": "https://www.coursera.org/account/accomplishments/verify/5P63QFTSBWED"
         },
+    
         {
-            "id": 13,
-            "name": "HTML and CSS: Building a Single-Page Website",
-            "issuer": "Coursera Project Network",
-            "date": "September 2020",
-            "category": "Web Development",
-            "description": "Built a responsive single-page website using HTML and CSS.",
-            "skills": [
-                "HTML",
-                "CSS",
-                "Layout Design",
-                "Responsive Web Design"
-            ],
-            "url": "https://www.coursera.org/account/accomplishments/verify/BTC3TG6M29YB"
-        },
-        {
-            "id": 14,
-            "name": "Python Functions, Files, and Dictionaries",
-            "issuer": "University of Michigan",
-            "date": "September 2020",
-            "category": "Programming",
-            "description": "Covered intermediate Python skills including functions, file handling, and dictionaries.",
-            "skills": [
-                "Python",
-                "Functions",
-                "File I/O",
-                "Dictionaries",
-                "Basic Scripting"
-            ],
-            "url": "https://www.coursera.org/account/accomplishments/verify/Q2HLQHQCX7ME"
-        },
-        {
-            "id": 15,
+            "id": 12,
             "name": "Deep Learning Inference with Azure ML Studio",
             "issuer": "Deprecated Guided Projects",
             "date": "August 2020",
@@ -298,48 +256,10 @@
             ],
             "url": "https://www.coursera.org/account/accomplishments/verify/MXMG62EL829G"
         },
+
+    
         {
-            "id": 16,
-            "name": "Introduction to HTML",
-            "issuer": "Coursera Project Network",
-            "date": "August 2020",
-            "category": "Web Development",
-            "description": "Learned foundational HTML for structuring web pages.",
-            "skills": [
-                "HTML",
-                "Web Structure"
-            ],
-            "url": "https://www.coursera.org/account/accomplishments/verify/67TTZG2P4UW5"
-        },
-        {
-            "id": 17,
-            "name": "Introduction to Python",
-            "issuer": "Coursera Project Network",
-            "date": "August 2020",
-            "category": "Programming",
-            "description": "Learned Python basics including syntax, loops, and functions.",
-            "skills": [
-                "Python",
-                "Programming Basics"
-            ],
-            "url": "https://www.coursera.org/account/accomplishments/verify/Z87F49J3R5Q8"
-        },
-        {
-            "id": 18,
-            "name": "Python Basics",
-            "issuer": "University of Michigan",
-            "date": "August 2020",
-            "category": "Programming",
-            "description": "Covered foundational Python programming as part of a specialization.",
-            "skills": [
-                "Python",
-                "Functions",
-                "Loops"
-            ],
-            "url": "https://www.coursera.org/account/accomplishments/verify/9Z7Y2TE2X2BS"
-        },
-        {
-            "id": 19,
+            "id": 13,
             "name": "Create Your First Chatbot with Rasa and Python",
             "issuer": "Deprecated Guided Projects",
             "date": "July 2020",
@@ -353,20 +273,7 @@
             "url": "https://www.coursera.org/account/accomplishments/verify/9LURF9FJGJ27"
         },
         {
-            "id": 20,
-            "name": "Practical Introduction to the Command Line",
-            "issuer": "Coursera Project Network",
-            "date": "July 2020",
-            "category": "Operating Systems",
-            "description": "Navigated and manipulated files using UNIX/Linux command-line interface.",
-            "skills": [
-                "Linux CLI",
-                "Shell Commands"
-            ],
-            "url": "https://www.coursera.org/account/accomplishments/verify/MMTLZS8J6DXK"
-        },
-        {
-            "id": 21,
+            "id": 14,
             "name": "AI For Everyone",
             "issuer": "DeepLearning.AI",
             "date": "April 2020",

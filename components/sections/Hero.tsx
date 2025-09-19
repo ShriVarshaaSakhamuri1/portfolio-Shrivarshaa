@@ -47,44 +47,11 @@ export function Hero({ scrollToSection }: HeroProps) {
       </h1>
 
       <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
-      I design and build scalable applications across full-stack development, cloud computing, 
-      and AI. I'm passionate about clean code, intelligent systems, and creating technology that solves 
-      real-world problems with clarity and impact.
+      I craft scalable, intelligent applications that bridge full-stack development, cloud computing, and AI. 
+      My mission? To build tech that’s not just functional, but impactful and fun.
       </p>
 
-      <div className="flex flex-wrap justify-center gap-2 mb-6">
-        <Badge
-          variant="outline"
-          className="px-2.5 py-0.5 text-sm bg-primary/5 border-primary/20"
-        >
-          CSS
-        </Badge>
-        <Badge
-          variant="outline"
-          className="px-2.5 py-0.5 text-sm bg-secondary/5 border-secondary/20"
-        >
-          Javascript
-        </Badge>
-        <Badge
-          variant="outline"
-          className="px-2.5 py-0.5 text-sm bg-blue-500/5 border-blue-500/20"
-        >
-          Python
-        </Badge>
-        <Badge
-          variant="outline"
-          className="px-2.5 py-0.5 text-sm bg-yellow-500/5 border-yellow-500/20"
-        >
-          TensorFlow
-        </Badge>
-        <Badge
-          variant="outline"
-          className="px-2.5 py-0.5 text-sm bg-cyan-500/5 border-cyan-500/20"
-        >
-          AWS
-        </Badge>
-      </div>
-
+      
       <div className="flex flex-wrap justify-center gap-3 mb-8">
         <Button
           className="rounded-full px-6 py-5 text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 group"
