@@ -7,9 +7,6 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -33,6 +30,7 @@ function mergeConfig(nextConfig, userConfig) {
   for (const key in userConfig) {
     if (
       typeof nextConfig[key] === 'object' &&
+      nextConfig[key] !== null &&
       !Array.isArray(nextConfig[key])
     ) {
       nextConfig[key] = {
