@@ -38,13 +38,13 @@
       "type": "internship",
       "description": "Developed a Pega-based platform to streamline service bookings and automate customer workflows.",
       "technologies": [
-    "Pega",
-    "Java",
-    "HTML5",
-    "CSS",
-    "JavaScript",
-    "Low-Code Platforms",
-    "Workflow Automation"
+      "Pega",
+      "Java",
+      "HTML5",
+      "CSS",
+      "JavaScript",
+      "Low-Code Platforms",
+      "Workflow Automation"
   ],
   "achievements": [
     "Developed a Pega-based service booking application supporting 1,000+ concurrent users and servicing an annual project scope valued at $100K+. ",
