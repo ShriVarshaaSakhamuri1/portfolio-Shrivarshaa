@@ -1,14 +1,14 @@
 {
   "overview": {
     "name": "Shrivarshaa Sakhamuri",
-    "title": "Frontend Developer & DevOps Engineer",
+    "title": "Software Developer ",
     "location": "Dallas, TX",
     "description": [
-      "I’m an AWS Certified Solutions Architect Associate and an enthusiastic Cloud & DevOps Engineer who loves building things that scale — whether it’s cloud-native infrastructure, dynamic web apps, or AI-driven solutions.",
-
-"I recently graduated with a Master’s in Computer Science from the University of Texas at Arlington, finishing with a 4.0 GPA and a specialization in Artificial Intelligence and Cloud Computing. During my time at UTA, I worked as a Graduate Teaching Assistant, mentoring 30+ students and deepening my own skills by helping others grow. Along the way, I’ve had hands-on experience designing and deploying cloud solutions using AWS services like EC2, S3, Lambda, and Kubernetes, and I’ve built scalable Pega-based automation systems during my internship. On the software side, I’ve developed full-stack web applications with React, Next.js, and Node.js, integrating secure logins, real-time features, and end-to-end testing to create smooth user experiences.",
-
-"Beyond the code, I’m passionate about solving problems creatively, learning continuously, and blending tech with impact — whether that’s through optimizing systems in the cloud, mentoring, or bringing innovative ideas to life."
+      "I build real-world systems that handle scale, not just projects that stay on GitHub. Recently, I worked at Citi, where I engineered backend services and a real-time transaction dashboard used by fraud analysts.",
+     "The system processed 20K+ daily transactions, and I improved performance by up to 40% by optimizing APIs, redesigning database queries, and introducing Redis caching. I also contributed to a scalable architecture that supported 100K+ concurrent users with high availability and low latency.",
+     "My work sits at the intersection of backend engineering, cloud infrastructure, and performance optimization. I’ve built microservices using Python (FastAPI) and Java (Spring Boot), designed hybrid data systems (MySQL + NoSQL), and deployed production-ready solutions on AWS using CloudFormation and CI/CD pipelines.",
+     "Beyond that, I’ve worked on projects like building an end-to-end CI/CD pipeline on AWS and developing machine learning models for real-time analytics. I enjoy breaking down complex systems, identifying bottlenecks, and designing solutions that are both efficient and scalable.",
+     "I recently completed my Master’s in Computer Science at the University of Texas at Arlington (4.0 GPA), where I also worked as a Graduate Teaching Assistant, mentoring students and strengthening my problem-solving skills.Right now, I’m focused on growing as a backend/full-stack engineer,building systems that are reliable, performant, and designed with real-world constraints in mind."
     ],
     
   

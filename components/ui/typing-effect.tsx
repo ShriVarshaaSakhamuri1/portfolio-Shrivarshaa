@@ -8,10 +8,8 @@ export function TypingEffect() {
 
   const textArray = [
     "Web Developer",
-    "AI/ML Engineer",
-    "DevOps Engineer",
-    "Pega Developer",
-    "Automation Tester",
+    "Full-Stack Engineer",
+    "Software Engineer"
   ];
 
   useEffect(() => {

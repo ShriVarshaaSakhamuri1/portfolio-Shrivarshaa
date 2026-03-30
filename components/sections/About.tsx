@@ -14,7 +14,6 @@ import {
   BookOpen,
   Lightbulb,
   Zap,
-  Download,
   Activity,
   Clapperboard,
   Printer,
@@ -175,22 +174,6 @@ export default function AboutPage() {
                         )
                       )}
                     </CardContent>
-                    <CardFooter className="p-3">
-                      <Link
-                        href="SHRIVARSHAA SAKHAMURI (2).pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="h-7 text-xs gap-1.5"
-                        >
-                          <Download size={12} />
-                          Resume
-                        </Button>
-                      </Link>
-                    </CardFooter>
                   </Card>
                 </motion.div>
               </motion.div>

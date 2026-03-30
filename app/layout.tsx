@@ -2,6 +2,7 @@ import type React from "react";
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/next";
 import { LoadingProvider } from "@/components/providers/LoadingProvider";
 import { cn } from "@/lib/utils";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LoadingProvider>{children}</LoadingProvider>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
@@ -41,3 +43,5 @@ export default function RootLayout({
 }
 
 import "./globals.css";
+
+
