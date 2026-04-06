@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ChevronRight, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,12 +11,14 @@ interface MobileHeaderProps {
   activeSection: string;
   scrollToSection: (sectionId: string) => void;
   renderThemeToggle: () => React.ReactNode;
+  showLinkedIn?: boolean;
 }
 
 export function MobileHeader({
   activeSection,
   scrollToSection,
   renderThemeToggle,
+  showLinkedIn = true,
 }: MobileHeaderProps) {
   return (
     <header className="lg:hidden fixed top-0 left-0 right-0 z-30 h-14 border-b bg-background/95 backdrop-blur flex items-center px-4">
@@ -67,12 +71,14 @@ export function MobileHeader({
               >
                 <Github size={20} />
               </Link>
-              <Link
-                href="https://www.linkedin.com/in/shrivarshaa-sakhamuri/"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Linkedin size={20} />
-              </Link>
+              {showLinkedIn && (
+                <Link
+                  href="https://www.linkedin.com/in/shrivarshaa-sakhamuri/"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Linkedin size={20} />
+                </Link>
+              )}
             </div>
             {renderThemeToggle()}
           </div>

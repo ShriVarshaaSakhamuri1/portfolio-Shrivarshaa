@@ -43,15 +43,20 @@ import aboutData from "@/data/about.json";
 import about from "@/data/about.json";
 import Link from "next/link";
 
-interface Overview {
+export interface Overview {
   name: string;
   title: string;
   location: string;
   description: string[];
 }
 
-export default function AboutPage() {
+interface AboutSectionProps {
+  overview?: Overview;
+}
+
+export default function AboutPage({ overview }: AboutSectionProps = {}) {
   const [activeTab, setActiveTab] = useState("overview");
+  const overviewData = overview ?? about.overview;
 
   // Animation variants
   const containerVariants = {
@@ -148,23 +153,23 @@ export default function AboutPage() {
                   <Card className="h-full">
                     <CardHeader className="p-3">
                       <CardTitle className="text-base">
-                        {about.overview.name}
+                        {overviewData.name}
                       </CardTitle>
                       <CardDescription className="text-xs">
-                        {about.overview.title}
+                        {overviewData.title}
                       </CardDescription>
                       <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
                         <MapPin size={10} />
-                        {about.overview.location}
+                        {overviewData.location}
                       </div>
                     </CardHeader>
                     <CardContent className="px-3 py-2 text-xs">
-                      {about.overview.description.map(
+                      {overviewData.description.map(
                         (paragraph: string, index: number) => (
                           <p
                             key={index}
                             className={`text-muted-foreground leading-relaxed ${
-                              index < about.overview.description.length - 1
+                              index < overviewData.description.length - 1
                                 ? "mb-2"
                                 : ""
                             }`}

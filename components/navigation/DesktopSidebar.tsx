@@ -1,6 +1,7 @@
+"use client";
+
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { SECTIONS } from "@/lib/constants";
 
@@ -8,12 +9,14 @@ interface DesktopSidebarProps {
   activeSection: string;
   scrollToSection: (sectionId: string) => void;
   renderThemeToggle: () => React.ReactNode;
+  showLinkedIn?: boolean;
 }
 
 export function DesktopSidebar({
   activeSection,
   scrollToSection,
   renderThemeToggle,
+  showLinkedIn = true,
 }: DesktopSidebarProps) {
   return (
     <aside className="hidden lg:flex w-64 flex-col fixed inset-y-0 z-30 border-sidebar-border bg-sidebar-background border-r">
@@ -58,12 +61,14 @@ export function DesktopSidebar({
           >
             <Github size={20} />
           </Link>
-          <Link
-            href="https://www.linkedin.com/in/shrivarshaa-sakhamuri/"
-            className="text-muted-foreground hover:text-sidebar-foreground transition-colors"
-          >
-            <Linkedin size={20} />
-          </Link>
+          {showLinkedIn && (
+            <Link
+              href="https://www.linkedin.com/in/shrivarshaa-sakhamuri/"
+              className="text-muted-foreground hover:text-sidebar-foreground transition-colors"
+            >
+              <Linkedin size={20} />
+            </Link>
+          )}
         </div>
         {renderThemeToggle()}
       </div>

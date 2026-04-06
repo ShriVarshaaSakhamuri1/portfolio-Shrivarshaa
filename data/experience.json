@@ -5,6 +5,26 @@
   },
   "jobs": [
     {
+      "title": "Graduate Teaching Assistant-Numerical Methods",
+      "company": "University of Texas at Arlington",
+      "location": "Arlington,Texas",
+      "period": "Jan 2025 - May 2025",
+      "type": "internship",
+      "description": "Led weekly classes and mentored graduate students through advanced software engineering assignments involving complex mathematical problems.",
+      "technologies": [
+        "Python",
+        "Error analysis",
+        "Linear Equations",
+        "Numerical differentiation",
+        "Teaching"
+      ],
+      "achievements": [
+        "Mentored 30+ students in implementing numerical algorithms using Python and MATLAB, improving code correctness, performance, and reliability.",
+        "Reviewed and validated student code, enforcing quality standards, correctness checks, and edge-case handling,  leading to a 25% improvement in class performance metrics, mirroring enterprise code review practices. ",
+        "Acted as liaison between faculty and students, resolving academic and technical issues efficiently. "
+      ]
+    },
+    {
       "title": "Software Developer",
       "company": "CitiGroup",
       "location": "Texas, USA",

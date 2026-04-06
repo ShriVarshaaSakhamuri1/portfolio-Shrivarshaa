@@ -4,8 +4,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ExperienceTimeline } from "@/components/experience";
 import experienceData from "@/data/experience.json";
+import type { ExperienceJob } from "@/types/experience";
 
-export default function ExperienceSection() {
+interface ExperienceSectionProps {
+  jobs?: ExperienceJob[];
+  description?: string;
+}
+
+export default function ExperienceSection({
+  jobs,
+  description,
+}: ExperienceSectionProps) {
+  const jobList = jobs ?? experienceData.jobs;
+  const sectionDescription =
+    description ?? experienceData.sectionInfo.description;
   return (
     <div className="flex min-h-screen bg-background relative">
       {/* Main Content */}
@@ -30,11 +42,11 @@ export default function ExperienceSection() {
             </h1>
             <div className="h-0.5 w-12 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
             <p className="mt-2 text-xs text-muted-foreground max-w-xl mx-auto">
-              {experienceData.sectionInfo.description}
+              {sectionDescription}
             </p>
           </motion.div>
 
-          <ExperienceTimeline jobs={experienceData.jobs} />
+          <ExperienceTimeline jobs={jobList} />
         </main>
       </div>
     </div>

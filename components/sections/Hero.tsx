@@ -7,9 +7,10 @@ import { TypingEffect } from "@/components/ui/typing-effect";
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
+  hideLinkedIn?: boolean;
 }
 
-export function Hero({ scrollToSection }: HeroProps) {
+export function Hero({ scrollToSection, hideLinkedIn }: HeroProps) {
   return (
     <div className="w-full max-w-4xl mx-auto text-center relative z-10 py-4">
       {/* Terminal-like header */}
@@ -71,7 +72,7 @@ export function Hero({ scrollToSection }: HeroProps) {
       </div>
 
       <TechIcons />
-      <SocialLinks />
+      <SocialLinks hideLinkedIn={hideLinkedIn} />
 
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
         <Button

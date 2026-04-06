@@ -2,28 +2,15 @@ import React from "react";
 import { motion, useScroll } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TimelineItem } from "./TimelineItem";
-
-interface Job {
-  title: string;
-  company: string;
-  location: string;
-  period: string;
-  type: "fulltime" | "internship";
-  description: string;
-  technologies: string[];
-  achievements: string[];
-  projectLink?: string;
-}
+import type { ExperienceJob, JobType } from "@/types/experience";
 
 interface ExperienceTimelineProps {
-  jobs: Job[];
+  jobs: ExperienceJob[];
 }
 
 export function ExperienceTimeline({ jobs }: ExperienceTimelineProps) {
   const [expandedJob, setExpandedJob] = React.useState<number | null>(0);
-  const [activeTab, setActiveTab] = React.useState<
-    "all" | "fulltime" | "internship"
-  >("all");
+  const [activeTab, setActiveTab] = React.useState<JobType>("all");
   const containerRef = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,

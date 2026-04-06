@@ -1,10 +1,12 @@
 declare module "@/data/experience.json" {
+  type JobType = "fulltime" | "internship";
+
   interface Job {
     title: string;
     company: string;
     location: string;
     period: string;
-    type: "fulltime" | "freelance";
+    type: JobType;
     description: string;
     technologies: string[];
     achievements: string[];
