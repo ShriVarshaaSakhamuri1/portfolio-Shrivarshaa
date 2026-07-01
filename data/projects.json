@@ -78,7 +78,7 @@
           "title": "MIME Recognition for Indian Sign Language",
           "description": "A user-friendly interface for recognizing and translating Indian sign language using deep learning models.",
           "images": [
-              "/nopreview.png"
+              "/images/projects/mime/mime_paper.png"
           ],
           "technologies": [
               "Python",
@@ -104,7 +104,7 @@
           "title": "Secure File Transfer using Blockchain and Cryptography",
           "description": "Designed a decentralized file-sharing solution using blockchain with AES and RSA for encryption.",
           "images": [
-              "/nopreview.png"
+              "/images/projects/springer/springer_paper.png"
           ],
           "technologies": [
               "Python",

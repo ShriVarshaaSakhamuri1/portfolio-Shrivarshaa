@@ -84,8 +84,8 @@ export function ContactForm({ formFields }: ContactFormProps) {
   };
 
   return (
-    <div className="w-full md:w-1/2">
-      <div className="max-w-md mx-auto md:mr-auto md:ml-0">
+    <div className="w-full">
+      <div className="mx-auto w-full">
         <Card>
           <CardContent className="p-6">
             <form onSubmit={handleSubmit} className="space-y-6">

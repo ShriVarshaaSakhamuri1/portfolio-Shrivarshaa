@@ -1,13 +1,4 @@
 {
-  "contactInfo": {
-    "title": "GET IN TOUCH",
-    "heading": "Let's Work Together",
-    "description": "Open to connect — to gain hands-on experience and grow my skills.",
-    "email": {
-      "label": "Email",
-      "address": "sakhamurishrivarshaa@gmail.com"
-    }
-  },
   "formFields": {
     "name": {
       "label": "Full Name",

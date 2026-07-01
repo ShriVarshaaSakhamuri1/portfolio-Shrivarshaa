@@ -7,9 +7,9 @@ export function TypingEffect() {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const textArray = [
-    "Web Developer",
-    "Full-Stack Engineer",
-    "Software Engineer"
+    "AI/ML Engineer",
+    "Generative AI Engineer",
+    "MLOps Engineer"
   ];
 
   useEffect(() => {

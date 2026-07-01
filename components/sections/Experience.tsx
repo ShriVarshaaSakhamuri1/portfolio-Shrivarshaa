@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExperienceTimeline } from "@/components/experience";
+import { SectionContainer } from "@/components/shared";
 import experienceData from "@/data/experience.json";
 import type { ExperienceJob } from "@/types/experience";
 
@@ -29,7 +30,7 @@ export default function ExperienceSection({
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
         </div>
 
-        <main className="relative py-8 px-3 md:px-4 max-w-5xl mx-auto min-h-screen">
+        <SectionContainer>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,7 +48,7 @@ export default function ExperienceSection({
           </motion.div>
 
           <ExperienceTimeline jobs={jobList} />
-        </main>
+        </SectionContainer>
       </div>
     </div>
   );

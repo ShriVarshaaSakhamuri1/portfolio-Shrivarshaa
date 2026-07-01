@@ -1,60 +1,24 @@
 {
   "overview": {
     "name": "Shrivarshaa Sakhamuri",
-    "title": "Software Developer ",
-    "location": "Dallas, TX",
+    "title": "AI/ML Engineer",
+    "location": "Montgomery, AL",
     "description": [
-      "I build real-world systems that handle scale, not just projects that stay on GitHub. Recently, I worked at Citi, where I engineered backend services and a real-time transaction dashboard used by fraud analysts.",
-     "The system processed 20K+ daily transactions, and I improved performance by up to 40% by optimizing APIs, redesigning database queries, and introducing Redis caching. I also contributed to a scalable architecture that supported 100K+ concurrent users with high availability and low latency.",
-     "My work sits at the intersection of backend engineering, cloud infrastructure, and performance optimization. I’ve built microservices using Python (FastAPI) and Java (Spring Boot), designed hybrid data systems (MySQL + NoSQL), and deployed production-ready solutions on AWS using CloudFormation and CI/CD pipelines.",
-     "Beyond that, I’ve worked on projects like building an end-to-end CI/CD pipeline on AWS and developing machine learning models for real-time analytics. I enjoy breaking down complex systems, identifying bottlenecks, and designing solutions that are both efficient and scalable.",
-     "I recently completed my Master’s in Computer Science at the University of Texas at Arlington (4.0 GPA), where I specialized in Artificial Intelligence and Cloud Computing.Right now, I’m focused on growing as a backend/full-stack engineer,building systems that are reliable, performant, and designed with real-world constraints in mind."
+      "I build production-oriented machine learning and generative AI systems that turn complex data into usable, measurable solutions. My work spans predictive modeling, deep learning, natural language processing, Retrieval-Augmented Generation, agentic workflows, and scalable AI services.",
+      "I have worked with Python, SQL, PyTorch, TensorFlow, Scikit-learn, XGBoost, LangChain, LangGraph, Hugging Face, FastAPI, Spark, and cloud AI platforms. I am particularly interested in building systems that combine strong model performance with reliable data pipelines, evaluation, monitoring, and deployment.",
+      "My experience includes fraud and anomaly detection, semantic search, document intelligence, model-serving APIs, distributed machine learning pipelines, vector databases, and multi-agent workflows. I focus on more than model development-I also consider latency, observability, retrieval quality, hallucination control, data drift, scalability, and maintainability.",
+      "I completed my Master's degree in Computer Science at the University of Texas at Arlington, where I focused on artificial intelligence, machine learning, cloud computing, and distributed systems. I enjoy solving ambiguous engineering problems and converting experimental AI workflows into dependable applications."
     ],
-    
-  
     "technologies": {
-      "frontend": ["React.js", "Next.js", "HTML", "CSS", "UI/UX Design", "Figma"],
-      "backend": ["Node.js", "FastAPI", "MySQL", "RestAPIs","Pega BPM"],
-      "testing": ["Selenium", "Software Testing", "Automation Testing"],
-      "ai_ml": ["Machine Learning", "Keras", "OpenCV", "TensorFlow", "CNN", "R"],
-      "devops": ["AWS", "Docker", "Kubernetes", "CloudFormation", "Linux"],
-      "security": ["Cryptography", "Blockchain", "AES", "RSA", "SHA-256"]
+      "languages": ["Python", "SQL", "Java", "Scala", "TypeScript"],
+      "ml": ["PyTorch", "TensorFlow", "Scikit-learn", "XGBoost"],
+      "genai": ["LangChain", "LangGraph", "Hugging Face", "FAISS"],
+      "mlops": ["FastAPI", "MLflow", "Docker", "Kubernetes", "Airflow"],
+      "cloud": ["AWS SageMaker", "AWS Bedrock", "Azure OpenAI", "Google Vertex AI"]
     }
   },
-  "tools": [
-    "Git",
-    "AWS",
-    "Linux",
-    "Apache",
-    "npm",
-    "Pega",
-    "XAMPP",
-    "Postman",
-    "VS Code",
-    "GitHub Actions",
-    "Jira"
-  ],
-  "softSkills": [
-    {
-      "name": "Problem Solving",
-      "icon": "Lightbulb"
-    },
-    {
-      "name": "Communication",
-      "icon": "Globe"
-    },
-    {
-      "name": "Teamwork",
-      "icon": "Heart"
-    },
-    {
-      "name": "Adaptability",
-      "icon": "Zap"
-    },
-    {
-      "name": "Attention to detail",
-      "icon": "Zap"
-    }
+  "personal": [
+    "Beyond engineering, I value continuous learning, curiosity, and building work that provides practical value. Outside work, I enjoy cooking, reading, working out, spending time with friends, watching series, and casual gaming."
   ],
   "hobbies": [
     {
@@ -70,7 +34,7 @@
       "icon": "Activity"
     },
     {
-      "label": "Netflix",
+      "label": "Movies & Series",
       "icon": "Clapperboard"
     },
     {

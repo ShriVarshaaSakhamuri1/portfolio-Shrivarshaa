@@ -1,3 +1,9 @@
+export interface SkillCategory {
+  title: string;
+  icon: string;
+  skills: string[];
+}
+
 export interface Skill {
   id: number;
   name: string;
@@ -21,11 +27,5 @@ export interface LearningJourneyItem {
 export interface SkillsData {
   sectionTitle: string;
   sectionDescription: string;
-  skills: Skill[];
-  learningJourney: LearningJourneyItem[];
-  stats: {
-    value: string;
-    label: string;
-    color: string;
-  }[];
+  categories: SkillCategory[];
 }

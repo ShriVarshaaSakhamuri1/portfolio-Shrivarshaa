@@ -1,104 +1,72 @@
 {
   "sectionInfo": {
-    "title": "Professional Experience",
-    "description": "My journey as a developer, showcasing the projects and roles that have shaped my career."
+    "title": "Professional Experience"
+    
   },
   "jobs": [
     {
-      "title": "Graduate Teaching Assistant-Numerical Methods",
-      "company": "University of Texas at Arlington",
-      "location": "Arlington,Texas",
-      "period": "Jan 2025 - May 2025",
-      "type": "internship",
-      "description": "Led weekly classes and mentored graduate students through advanced software engineering assignments involving complex mathematical problems.",
-      "technologies": [
-        "Python",
-        "Error analysis",
-        "Linear Equations",
-        "Numerical differentiation",
-        "Teaching"
-      ],
-      "achievements": [
-        "Mentored 30+ students in implementing numerical algorithms using Python and MATLAB, improving code correctness, performance, and reliability.",
-        "Reviewed and validated student code, enforcing quality standards, correctness checks, and edge-case handling,  leading to a 25% improvement in class performance metrics, mirroring enterprise code review practices. ",
-        "Acted as liaison between faculty and students, resolving academic and technical issues efficiently. "
-      ]
-    },
-    {
-      "title": "Software Developer",
-      "company": "CitiGroup",
-      "location": "Texas, USA",
-      "period": "Dec 2024 - Present",
+      "title": "AI/ML Engineer",
+      "company": "JPMorgan Chase & Co.",
+      "location": "United States",
+      "period": "January 2025 - Present",
       "type": "fulltime",
-      "description": "Building and maintaining high-performance backend services and dashboards for banking applications, ensuring security and scalability.",
+      "description": "Production AI and machine-learning systems for fraud detection, analyst workflows, and scalable model deployment.",
       "technologies": [
         "Python",
-        "Java",
-        "React.js",
-        "Redis",
-        "AWS",
-        "MySQL",
-        "NoSQL",
-        "CloudFormation",
-        "CI/CD"
+        "SQL",
+        "PyTorch",
+        "XGBoost",
+        "PySpark",
+        "Airflow",
+        "AWS SageMaker",
+        "LangChain",
+        "LangGraph",
+        "FAISS",
+        "FastAPI",
+        "MLflow",
+        "SHAP",
+        "Docker",
+        "Kubernetes"
       ],
       "achievements": [
-        "Built and managed 4+ backend services using Python and Java to support banking applications, processing 20,000+ secure daily transactions with high availability.",
-        "Created reusable React.js components and implemented Redis caching, improving dashboard performance and reducing page load times by 35%.",
-        "Automated AWS deployments with CloudFormation and CI/CD pipelines, shortening release cycles from 2 weeks to 3 days.",
-        "Integrated MySQL and NoSQL databases into transaction monitoring systems, boosting query speed by 40% and enhancing fraud detection accuracy.",
-        "Collaborated with a 6-member cross-functional team to develop compliance features, achieving 100% audit readiness for internal banking applications."
+        "Developed fraud-detection models using PyTorch, XGBoost, and engineered transaction features across large-scale financial datasets, improving detection accuracy while reducing unnecessary alerts.",
+        "Built distributed machine-learning pipelines with PySpark, Airflow, and AWS SageMaker to automate data preparation, feature generation, training, and model evaluation.",
+        "Created Retrieval-Augmented Generation applications using LangChain, embedding models, and FAISS to help analysts retrieve relevant information from enterprise documents.",
+        "Implemented LangGraph-based agent workflows with tool calling to automate portions of fraud-investigation and risk-analysis processes.",
+        "Established model evaluation and experiment tracking with MLflow, SHAP, and LLM evaluation frameworks to measure predictive performance, retrieval quality, and hallucination behavior.",
+        "Containerized and deployed AI services with FastAPI, Docker, Kubernetes, AWS, monitoring, and CI/CD workflows."
       ]
     },
     {
-      "title": "Intern",
-      "company": "Virtusa",
+      "title": "AI Engineer",
+      "company": "Accenture",
       "location": "India",
-      "period": "Jan 2023 - Apr 2023",
-      "type": "internship",
-      "description": "Developed a Pega-based platform to streamline service bookings and automate customer workflows.",
+      "period": "November 2020 - July 2023",
+      "type": "fulltime",
+      "description": "Enterprise machine-learning, NLP, semantic-search, and inference workflows for analytics and document intelligence.",
       "technologies": [
-      "Pega",
-      "Java",
-      "HTML5",
-      "CSS",
-      "JavaScript",
-      "Low-Code Platforms",
-      "Workflow Automation"
-  ],
-  "achievements": [
-    "Developed a Pega-based service booking application supporting 1,000+ concurrent users and servicing an annual project scope valued at $100K+. ",
-    "Automated business processes using declarative rules, data pages, and case types, improving task routing and execution efficiency.",
-    "Reduced booking time by 30% by enhancing UI/UX with dynamic forms, reusable components, and conditional layouts.",
-    "Improved application performance by 40% by optimizing case processing stages and eliminating redundant rule executions."
-  ]
-    },
-    {
-      "title": "Cloud Engineering Intern",
-      "company": "Amazon Web Services",
-      "location": "India",
-      "period": "Nov 2022 - Jan 2023",
-      "type": "internship",
-      "description": "Designed and deployed secure, fault-tolerant cloud systems using core AWS services with a focus on automation and monitoring.",
-      "technologies": [
-        "AWS EC2",
-        "Lambda",
-        "ECS",
-        "S3",
-        "VPC",
-        "DynamoDB",
-        "API Gateway",
-        "CloudFormation",
-        "CloudWatch"
+        "Python",
+        "SQL",
+        "PySpark",
+        "Scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "NLP",
+        "LangChain",
+        "FAISS",
+        "FastAPI",
+        "Docker",
+        "AWS",
+        "Databricks",
+        "Apache Spark"
       ],
       "achievements": [
-        "Configured and deployed infrastructure using EC2, S3, and CloudFormation",
-        "Gained hands-on experience with containerized services and Kubernetes orchestration",
-        "Engineered high-availability cloud systems with secure, fault-tolerant setups, reducing latency by 35%.",
-        "Developed serverless applications using API Gateway, IAM, and DynamoDB for efficient cloud-native workflows.",
-        "Automated provisioning of VPCs, EC2 instances, and IAM roles using Infrastructure-as-Code templates with AWS CloudFormation.",
-        "Implemented proactive troubleshooting measures with alarms and log filters to maintain compliance and encryption standards.",
-        "Collaborated with virtual teams to complete cloud project milestones in a 10-week internship."
+        "Developed machine-learning and data-processing pipelines using Python, SQL, and PySpark for enterprise analytics and prediction workflows.",
+        "Built classification, regression, risk-analysis, and forecasting models using Scikit-learn, XGBoost, and LightGBM.",
+        "Implemented NLP workflows for document classification, named entity recognition, text extraction, and information retrieval.",
+        "Developed RAG and semantic-search prototypes using LangChain, embedding models, and FAISS for natural-language access to enterprise documents.",
+        "Deployed inference services using FastAPI, Docker, AWS, and automated CI/CD workflows.",
+        "Improved distributed ETL and feature-engineering workloads using Apache Spark and Databricks."
       ]
     }
   ]

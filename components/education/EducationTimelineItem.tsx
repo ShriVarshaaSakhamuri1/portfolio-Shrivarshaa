@@ -183,20 +183,22 @@ export default function EducationTimelineItem({
                     <div className="pt-3 mt-3 border-t">
                       {/* Key Achievements */}
                       {education.achievements && (
-                        <div className="mb-3">
-                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
+                        <div className="mb-3 text-left">
+                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5 text-left">
                             <Award className="h-3 w-3 text-yellow-500" />
                             Key Achievements
                           </h4>
-                          <ul className="space-y-1.5">
+                          <ul className="space-y-2">
                             {education.achievements.map(
                               (achievement, achievementIndex) => (
                                 <li
                                   key={achievementIndex}
-                                  className="flex items-start gap-1.5"
+                                  className="flex items-start gap-2 text-left"
                                 >
-                                  <Award className="h-3 w-3 text-yellow-400 mt-0.5 flex-shrink-0" />
-                                  <span className="text-xs text-muted-foreground">
+                                  <span className="mt-0.5 flex h-3.5 w-3.5 flex-shrink-0 items-center justify-center">
+                                    <Award className="h-3 w-3 text-yellow-400" />
+                                  </span>
+                                  <span className="min-w-0 flex-1 text-xs leading-relaxed text-muted-foreground">
                                     {achievement}
                                   </span>
                                 </li>
@@ -208,17 +210,17 @@ export default function EducationTimelineItem({
 
                       {/* Courses */}
                       {education.courses && (
-                        <div className="mb-3">
-                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
+                        <div className="mb-3 text-left">
+                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5 text-left">
                             <BookOpen className="h-3 w-3 text-blue-500" />
                             Notable Courses
                           </h4>
-                          <div className="flex flex-wrap gap-1.5">
+                          <div className="flex flex-wrap items-start gap-2">
                             {education.courses.map((course, courseIndex) => (
                               <Badge
                                 key={courseIndex}
                                 variant="outline"
-                                className="bg-muted/30 text-[10px] px-1.5 py-0.5"
+                                className="m-0 max-w-full whitespace-normal bg-muted/30 px-2 py-1 text-left text-[10px] leading-relaxed"
                               >
                                 {course}
                               </Badge>

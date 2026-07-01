@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Shrivarshaa Sakhamuri - Web developer/DevOps Engineer",
+  title: "Shrivarshaa Sakhamuri - AI/ML Engineer",
   description:
-    "Portfolio website of Shrivarshaa Sakhamuri, a Web Developer and AWS enthusiast with expertise in JavaScript, CSS, React, and AWS services.",
+    "Portfolio website of Shrivarshaa Sakhamuri, an AI/ML Engineer building production-ready machine learning, generative AI, RAG, and agentic systems.",
   generator: "v0.dev",
 };
 
@@ -30,8 +30,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
           disableTransitionOnChange
         >
           <LoadingProvider>{children}</LoadingProvider>

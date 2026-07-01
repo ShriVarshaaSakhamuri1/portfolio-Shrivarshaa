@@ -42,14 +42,14 @@ export function Hero({ scrollToSection, hideLinkedIn }: HeroProps) {
       </div>
 
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
-        <span className="bg-gradient-to-r from-primary via-purple-500 to-secondary text-transparent bg-clip-text">
+        <span className="bg-[linear-gradient(90deg,#7c3aed_0%,#9333ea_50%,#c026d3_100%)] text-transparent bg-clip-text">
           Shrivarshaa Sakhamuri
         </span>
       </h1>
 
-      <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
-      I craft scalable, intelligent applications that bridge full-stack development, cloud computing, and AI. 
-      My mission? To build tech that’s not just functional, but impactful and fun.
+      <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+        Building production-ready machine learning, generative AI, RAG, and
+        agentic systems.
       </p>
 
       

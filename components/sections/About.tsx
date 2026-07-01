@@ -1,47 +1,19 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  Code,
-  Database,
-  Globe,
-  Layers,
-  Terminal,
-  Briefcase,
-  Heart,
-  Coffee,
-  BookOpen,
-  Lightbulb,
-  Zap,
   Activity,
+  BookOpen,
   Clapperboard,
-  Printer,
-  Boxes,
-  MapPin,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
-import {
-  SkillBar,
-  BookIcon,
-  Mountain,
-  Camera,
-  Utensils,
   Gamepad,
-} from "@/components/about";
+  MapPin,
+  Utensils,
+} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { SectionContainer } from "@/components/shared";
 import aboutData from "@/data/about.json";
-import about from "@/data/about.json";
-import Link from "next/link";
 
 export interface Overview {
   name: string;
@@ -54,262 +26,169 @@ interface AboutSectionProps {
   overview?: Overview;
 }
 
+const IconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+  Activity,
+  BookOpen,
+  Clapperboard,
+  Gamepad,
+  Utensils,
+};
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 16, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.35,
+    },
+  },
+};
+
 export default function AboutPage({ overview }: AboutSectionProps = {}) {
   const [activeTab, setActiveTab] = useState("overview");
-  const overviewData = overview ?? about.overview;
-
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
+  const overviewData = overview ?? aboutData.overview;
 
   return (
     <div className="flex min-h-screen bg-background">
-      {/* Main Content */}
       <div className="flex-1 relative">
-        {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden -z-10">
-          <div className="absolute top-1/4 left-1/4 w-56 h-56 bg-primary/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-36 h-36 bg-secondary/5 rounded-full blur-3xl"></div>
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
+          <div className="absolute top-1/4 left-1/4 h-56 w-56 rounded-full bg-primary/5 blur-3xl" />
+          <div className="absolute bottom-1/3 right-1/4 h-36 w-36 rounded-full bg-secondary/5 blur-3xl" />
+          <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
         </div>
 
-        <main className="relative py-8 px-3 md:px-4 max-w-5xl mx-auto">
-          {/* Page Title */}
+        <SectionContainer>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-6"
+            className="mb-6 text-center"
           >
-            <h1 className="text-2xl md:text-3xl font-bold mb-2">
+            <h1 className="mb-2 text-2xl font-bold md:text-3xl">
               <span className="text-primary">About</span>{" "}
               <span className="text-secondary">Me</span>
             </h1>
-            <div className="h-0.5 w-12 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
-            <p className="mt-2 text-xs text-muted-foreground max-w-xl mx-auto">
-              Get to know more about my skills, experience, and what drives me
-              as a developer.
+            <div className="mx-auto h-0.5 w-12 bg-gradient-to-r from-primary to-secondary" />
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
+              Building production-ready machine learning, generative AI, RAG,
+              and agentic systems.
             </p>
           </motion.div>
 
-          {/* Tabs Navigation */}
           <Tabs
             defaultValue="overview"
             value={activeTab}
             onValueChange={setActiveTab}
             className="mb-6"
           >
-            <div className="flex justify-center mb-4">
-              <TabsList className="grid grid-cols-2 w-full max-w-xs">
+            <div className="mb-5 flex justify-center">
+              <TabsList className="grid w-full max-w-xs grid-cols-2">
                 <TabsTrigger value="overview">Overview</TabsTrigger>
                 <TabsTrigger value="personal">Personal</TabsTrigger>
               </TabsList>
             </div>
 
-            {/* Overview Tab */}
             <TabsContent value="overview">
               <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="grid md:grid-cols-3 gap-4 mb-6"
+                className="mx-auto w-full max-w-[900px]"
               >
-                {/* Profile Image */}
-                <motion.div
-                  variants={itemVariants}
-                  className="md:col-span-1 flex justify-center"
-                >
-                  <div className="relative w-36 h-36">
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5 animate-pulse-slow">
-                      <div className="rounded-full bg-card w-full h-full flex items-center justify-center overflow-hidden">
-                        <div className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-                          SS
+                <motion.div variants={itemVariants}>
+                  <Card className="border-border/80 bg-card">
+                    <CardHeader className="items-center px-5 pb-4 pt-6 text-center sm:px-8">
+                      <div className="mb-4 h-24 w-24 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5">
+                        <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
+                          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-3xl font-bold text-transparent">
+                            SS
+                          </span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* Bio Section */}
-                <motion.div variants={itemVariants} className="md:col-span-2">
-                  <Card className="h-full">
-                    <CardHeader className="p-3">
-                      <CardTitle className="text-base">
+                      <CardTitle className="text-2xl">
                         {overviewData.name}
                       </CardTitle>
-                      <CardDescription className="text-xs">
+                      <p className="text-sm font-medium text-primary">
                         {overviewData.title}
-                      </CardDescription>
-                      <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
-                        <MapPin size={10} />
+                      </p>
+                      <p className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                        <MapPin className="h-4 w-4" />
                         {overviewData.location}
-                      </div>
+                      </p>
                     </CardHeader>
-                    <CardContent className="px-3 py-2 text-xs">
-                      {overviewData.description.map(
-                        (paragraph: string, index: number) => (
-                          <p
-                            key={index}
-                            className={`text-muted-foreground leading-relaxed ${
-                              index < overviewData.description.length - 1
-                                ? "mb-2"
-                                : ""
-                            }`}
-                          >
-                            {paragraph}
-                          </p>
-                        )
-                      )}
+                    <CardContent className="space-y-4 px-5 pb-6 text-left sm:px-8">
+                      {overviewData.description.map((paragraph) => (
+                        <p
+                          key={paragraph}
+                          className="text-sm leading-7 text-muted-foreground"
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
                     </CardContent>
                   </Card>
                 </motion.div>
               </motion.div>
             </TabsContent>
 
-            {/* Personal Tab */}
             <TabsContent value="personal">
               <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
               >
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
-                  <motion.div variants={itemVariants}>
-                    <Card>
-                      <CardHeader className="p-3">
-                        <CardTitle className="text-base">About Me</CardTitle>
-                      </CardHeader>
-                      <CardContent className="p-3 space-y-2 text-xs">
-                        <p className="text-muted-foreground">
-                          Beyond coding, I'm passionate about continuous
-                          learning and staying at the forefront of technology
-                          trends. I believe in writing clean, maintainable code
-                          and creating solutions that provide real value to
-                          users.
+                <motion.div
+                  variants={itemVariants}
+                  className="mx-auto mb-8 w-full max-w-[860px]"
+                >
+                  <Card className="border-border/80 bg-card">
+                    <CardHeader className="px-5 pt-6 text-center sm:px-8">
+                      <CardTitle className="text-xl">About Me</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4 px-5 pb-6 sm:px-8">
+                      {aboutData.personal.map((paragraph) => (
+                        <p
+                          key={paragraph}
+                          className="text-sm leading-7 text-muted-foreground"
+                        >
+                          {paragraph}
                         </p>
-                        <p className="text-muted-foreground">
-                          When I'm not in front of a computer, you can find me
-                          hanging out with friends, binge-watching Netflix, or
-                          heading out for a fun time.
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
+                      ))}
+                    </CardContent>
+                  </Card>
+                </motion.div>
 
-                  <motion.div variants={itemVariants}>
-                    <Card>
-                      <CardHeader className="p-3">
-                        <CardTitle className="text-base">My Approach</CardTitle>
-                      </CardHeader>
-                      <CardContent className="p-3">
-                        <ul className="space-y-2 text-xs">
-                          <li className="flex items-start gap-2">
-                            <div className="mt-0.5 h-4 w-4 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                              <div className="h-2 w-2 rounded-full bg-primary"></div>
-                            </div>
-                            <p className="text-muted-foreground">
-                              <span className="font-medium text-foreground">
-                                User-Centered Design:
-                              </span>{" "}
-                              Crafting interfaces that are clean, intuitive,
-                              and fun to use!
-                            </p>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <div className="mt-0.5 h-4 w-4 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                              <div className="h-2 w-2 rounded-full bg-secondary"></div>
-                            </div>
-                            <p className="text-muted-foreground">
-                              <span className="font-medium text-foreground">
-                                Clean Code:
-                              </span>{" "}
-                              I write maintainable, well-documented code that
-                              follows best practices.
-                            </p>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <div className="mt-0.5 h-4 w-4 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                              <div className="h-2 w-2 rounded-full bg-green-500"></div>
-                            </div>
-                            <p className="text-muted-foreground">
-                              <span className="font-medium text-foreground">
-                                Continuous Learning:
-                              </span>{" "}
-                              Exploring new technologies and challenging myself
-                              to grow as a developer.
-                            </p>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <div className="mt-0.5 h-4 w-4 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                              <div className="h-2 w-2 rounded-full bg-blue-500"></div>
-                            </div>
-                            <p className="text-muted-foreground">
-                              <span className="font-medium text-foreground">
-                                Problem Solving:
-                              </span>{" "}
-                              Tackling complex challenges with elegant, efficient
-                              solutions.
-                            </p>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                </div>
-
-                {/* Hobbies */}
-                <motion.div variants={itemVariants} className="mb-6">
-                  <h3 className="text-base font-semibold mb-3 text-center">
+                <motion.div variants={itemVariants} className="mx-auto max-w-4xl">
+                  <h3 className="mb-4 text-center text-lg font-semibold">
                     Interests & Hobbies
                   </h3>
-                  <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
-                    {aboutData.hobbies.map((hobby, index) => {
-                      const IconMap: Record<
-                        string,
-                        React.ComponentType<React.SVGProps<SVGSVGElement>>
-                      > = {
-                        Boxes,
-                        Utensils,
-                        BookOpen,
-                        Activity,
-                        Clapperboard,
-                        Gamepad,
-                      };
-
+                  <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+                    {aboutData.hobbies.map((hobby) => {
                       const IconComponent = IconMap[hobby.icon];
                       if (!IconComponent) return null;
 
                       return (
                         <div
-                          key={index}
-                          className="flex flex-col items-center p-2 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
+                          key={hobby.label}
+                          className="flex min-h-28 flex-col items-center justify-center rounded-lg border border-border bg-card p-4 text-center transition-colors hover:border-primary/40 hover:bg-muted/40"
                         >
-                          <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 rounded-lg flex items-center justify-center mb-1 bg-primary/10">
-                              <IconComponent className="h-4 w-4" />
-                            </div>
-                            <span className="text-[10px] text-muted-foreground">
-                              {hobby.label}
-                            </span>
+                          <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                            <IconComponent className="h-5 w-5 text-primary" />
                           </div>
+                          <span className="text-sm font-medium text-foreground">
+                            {hobby.label}
+                          </span>
                         </div>
                       );
                     })}
@@ -318,7 +197,7 @@ export default function AboutPage({ overview }: AboutSectionProps = {}) {
               </motion.div>
             </TabsContent>
           </Tabs>
-        </main>
+        </SectionContainer>
       </div>
     </div>
   );

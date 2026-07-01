@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ContactInfo, ContactForm } from "@/components/contact";
+import { ContactForm } from "@/components/contact";
 import contactData from "@/data/contact.json";
 
 export function ContactSection() {
@@ -23,8 +23,7 @@ export function ContactSection() {
         </p>
       </motion.div>
 
-      <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8">
-        <ContactInfo data={contactData.contactInfo} />
+      <div className="mx-auto w-full max-w-[800px]">
         <ContactForm formFields={contactData.formFields} />
       </div>
     </div>
