@@ -61,6 +61,22 @@
   }
 }
 
+@layer components {
+  .interactive-card {
+    border-color: hsl(var(--border));
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .interactive-card:hover,
+  .interactive-card:focus-within {
+    border-color: hsl(var(--primary));
+    box-shadow: 0 8px 24px rgb(37 99 235 / 10%);
+  }
+}
+
 /* Grid pattern background */
 .bg-grid-pattern {
   background-image: linear-gradient(

@@ -19,7 +19,7 @@ interface CourseCardProps {
 export default function CourseCard({ course }: CourseCardProps) {
   return (
     <motion.div whileHover={{ y: -3 }} className="h-full cursor-pointer">
-      <Card className="h-full overflow-hidden">
+      <Card className="interactive-card h-full overflow-hidden">
         <div
           className={cn(
             "h-0.5 w-full",

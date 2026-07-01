@@ -103,7 +103,7 @@ export default function EducationTimelineItem({
       {/* Education Card */}
       <motion.div
         className={cn(
-          "ml-20 md:ml-0 md:mr-0 md:w-5/12 mt-12 cursor-pointer hover:shadow-md transition-shadow",
+          "ml-20 md:ml-0 md:mr-0 md:w-5/12 mt-12 cursor-pointer",
           isEven ? "md:mr-auto" : "md:ml-auto"
         )}
         whileHover={{ y: -5 }}
@@ -111,7 +111,7 @@ export default function EducationTimelineItem({
         <div className="pt-10">
           <Card
             className={cn(
-              "overflow-hidden transition-all duration-300",
+              "interactive-card overflow-hidden",
               isExpanded ? "shadow-lg" : ""
             )}
           >

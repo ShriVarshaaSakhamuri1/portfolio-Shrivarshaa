@@ -46,7 +46,7 @@ export default function CertificateCard({
       >
         <Card
           className={cn(
-            "h-full overflow-hidden transition-all duration-300",
+            "interactive-card h-full overflow-hidden",
             isExpanded ? "shadow-md" : ""
           )}
         >

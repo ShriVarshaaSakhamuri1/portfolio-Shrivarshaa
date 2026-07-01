@@ -164,7 +164,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <>
       <motion.div
-        className="group relative bg-card rounded-lg overflow-hidden border shadow-sm hover:shadow-md transition-shadow cursor-pointer h-[320px] flex flex-col"
+        className="interactive-card group relative bg-card rounded-lg overflow-hidden border shadow-sm cursor-pointer h-[320px] flex flex-col"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setIsModalOpen(true)}

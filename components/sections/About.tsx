@@ -107,7 +107,7 @@ export default function AboutPage({ overview }: AboutSectionProps = {}) {
                 className="mx-auto w-full max-w-[900px]"
               >
                 <motion.div variants={itemVariants}>
-                  <Card className="border-border/80 bg-card transition-colors hover:border-primary/40">
+                  <Card className="interactive-card bg-card">
                     <CardHeader className="items-center px-5 pb-4 pt-6 text-center sm:px-8">
                       <div className="mb-4 h-24 w-24 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5">
                         <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
@@ -152,7 +152,7 @@ export default function AboutPage({ overview }: AboutSectionProps = {}) {
                   variants={itemVariants}
                   className="mx-auto mb-8 w-full max-w-[860px]"
                 >
-                  <Card className="border-border/80 bg-card transition-colors hover:border-primary/40">
+                  <Card className="interactive-card bg-card">
                     <CardHeader className="px-5 pt-6 text-center sm:px-8">
                       <CardTitle className="text-xl">Outside Work</CardTitle>
                     </CardHeader>
