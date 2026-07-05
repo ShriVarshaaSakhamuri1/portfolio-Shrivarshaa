@@ -86,7 +86,7 @@ export function MobileHeader({
       </Sheet>
       <div className="flex-1 flex justify-center">
         <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
-          SG
+          SS
         </div>
       </div>
       {renderThemeToggle()}
