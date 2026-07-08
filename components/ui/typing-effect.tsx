@@ -8,6 +8,7 @@ export function TypingEffect() {
 
   const textArray = [
     "AI/ML Engineer",
+    "Data Scientist",
     "Generative AI Engineer",
     "MLOps Engineer"
   ];
