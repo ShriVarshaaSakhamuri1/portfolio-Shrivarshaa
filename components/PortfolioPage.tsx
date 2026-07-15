@@ -15,11 +15,17 @@ import EducationSection from "@/components/sections/Education";
 import SkillsSection from "@/components/sections/Skills";
 import { ContactSection } from "@/components/sections/Contact";
 import type { ExperienceJob } from "@/types/experience";
+import type { SkillsData } from "@/data/skills.d";
 
 interface PortfolioPageProps {
   experienceJobs?: ExperienceJob[];
   experienceDescription?: string;
   aboutOverview?: Overview;
+  aboutSubtitle?: string;
+  heroRoleTexts?: string[];
+  heroSubtitle?: string;
+  projectsDescription?: string;
+  skillsData?: SkillsData;
   hideLinkedIn?: boolean;
 }
 
@@ -27,6 +33,11 @@ export default function PortfolioPage({
   experienceJobs,
   experienceDescription,
   aboutOverview,
+  aboutSubtitle,
+  heroRoleTexts,
+  heroSubtitle,
+  projectsDescription,
+  skillsData,
   hideLinkedIn = false,
 }: PortfolioPageProps) {
   const [activeSection, setActiveSection] = useState("home");
@@ -121,10 +132,15 @@ export default function PortfolioPage({
 
       <main className="flex-1 lg:ml-64">
         <section ref={homeRef} id="home">
-          <Hero scrollToSection={scrollToSection} hideLinkedIn={hideLinkedIn} />
+          <Hero
+            scrollToSection={scrollToSection}
+            hideLinkedIn={hideLinkedIn}
+            roleTexts={heroRoleTexts}
+            subtitle={heroSubtitle}
+          />
         </section>
         <section ref={aboutRef} id="about">
-          <AboutSection overview={aboutOverview} />
+          <AboutSection overview={aboutOverview} subtitle={aboutSubtitle} />
         </section>
         <section ref={experienceRef} id="experience">
           <ExperienceSection
@@ -133,13 +149,13 @@ export default function PortfolioPage({
           />
         </section>
         <section ref={projectsRef} id="projects">
-          <ProjectsSection />
+          <ProjectsSection description={projectsDescription} />
         </section>
         <section ref={educationRef} id="education">
           <EducationSection />
         </section>
         <section ref={skillsRef} id="skills">
-          <SkillsSection />
+          <SkillsSection data={skillsData} />
         </section>
         <section ref={contactRef} id="contact">
           <ContactSection />

@@ -24,6 +24,7 @@ export interface Overview {
 
 interface AboutSectionProps {
   overview?: Overview;
+  subtitle?: string;
 }
 
 const IconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
@@ -55,7 +56,10 @@ const itemVariants = {
   },
 };
 
-export default function AboutPage({ overview }: AboutSectionProps = {}) {
+export default function AboutPage({
+  overview,
+  subtitle = "Building production-ready machine learning, generative AI, RAG, and agentic systems.",
+}: AboutSectionProps = {}) {
   const [activeTab, setActiveTab] = useState("overview");
   const overviewData = overview ?? aboutData.overview;
 
@@ -81,8 +85,7 @@ export default function AboutPage({ overview }: AboutSectionProps = {}) {
             </h1>
             <div className="mx-auto h-0.5 w-12 bg-gradient-to-r from-primary to-secondary" />
             <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
-              Building production-ready machine learning, generative AI, RAG,
-              and agentic systems.
+              {subtitle}
             </p>
           </motion.div>
 

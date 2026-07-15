@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import projectsJson from "@/data/projects.json";
@@ -14,6 +14,8 @@ interface Project {
   Url: string;
   keyFeatures: string[];
   categories: string[];
+  projectType?: string;
+  dates?: string;
 }
 
 interface ProjectsData {
@@ -35,7 +37,11 @@ const categories = [
   "Security",
 ];
 
-export function ProjectsSection() {
+interface ProjectsSectionProps {
+  description?: string;
+}
+
+export function ProjectsSection({ description }: ProjectsSectionProps) {
   const [activeTab, setActiveTab] = useState("All");
 
   const filteredProjects = projects.projects.filter((project) =>
@@ -59,8 +65,8 @@ export function ProjectsSection() {
           </h2>
           <div className="h-0.5 w-12 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
           <p className="mt-2 text-xs text-muted-foreground max-w-xl mx-auto">
-            A showcase of my most significant projects, demonstrating my skills
-            and expertise in computer science engineering.
+            {description ??
+              "A showcase of my most significant projects, demonstrating my skills and expertise in computer science engineering."}
           </p>
         </div>
 

@@ -19,6 +19,7 @@ export interface Certificate {
   name: string;
   issuer: string;
   date: string;
+  duration?: string;
   category: string;
   description: string;
   skills: string[];
@@ -33,6 +34,7 @@ export interface OnlineCourse {
   platform: string;
   category: string;
   completionDate: string;
+  duration?: string;
   skills: string[];
   url?: string;
 }

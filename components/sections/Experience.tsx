@@ -42,9 +42,11 @@ export default function ExperienceSection({
               <span className="text-secondary">Experience</span>
             </h1>
             <div className="h-0.5 w-12 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
-            <p className="mt-2 text-xs text-muted-foreground max-w-xl mx-auto">
-              {sectionDescription}
-            </p>
+            {sectionDescription ? (
+              <p className="mt-2 text-xs text-muted-foreground max-w-xl mx-auto">
+                {sectionDescription}
+              </p>
+            ) : null}
           </motion.div>
 
           <ExperienceTimeline jobs={jobList} />

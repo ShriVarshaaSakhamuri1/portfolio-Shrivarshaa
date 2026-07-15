@@ -19,6 +19,8 @@ interface Project {
   Url?: string;
   keyFeatures: string[];
   categories: string[];
+  projectType?: string;
+  dates?: string;
 }
 
 interface ProjectCardProps {
@@ -194,6 +196,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           <h3 className="font-semibold text-sm mb-1.5 line-clamp-1">
             {project.title}
           </h3>
+          {(project.projectType || project.dates) && (
+            <p className="text-[10px] font-medium text-primary mb-1.5 line-clamp-1">
+              {[project.projectType, project.dates].filter(Boolean).join(" / ")}
+            </p>
+          )}
           <p className="text-xs text-muted-foreground mb-2 line-clamp-2 flex-1">
             {project.description}
           </p>
@@ -243,6 +250,13 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               <h2 className="text-lg font-bold text-primary mb-2">
                 {project.title}
               </h2>
+              {(project.projectType || project.dates) && (
+                <p className="mb-2 text-xs font-medium text-muted-foreground">
+                  {[project.projectType, project.dates]
+                    .filter(Boolean)
+                    .join(" / ")}
+                </p>
+              )}
 
               {/* Project Image */}
               <div className="relative rounded-lg overflow-hidden mb-3">

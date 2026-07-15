@@ -2,10 +2,14 @@ declare module "@/data/projects.json" {
   interface Project {
     title: string;
     description: string;
-    image: string;
+    images: string[];
     technologies: string[];
     Url: string;
     githubUrl: string;
+    keyFeatures: string[];
+    categories: string[];
+    projectType?: string;
+    dates?: string;
   }
 
   interface SectionInfo {

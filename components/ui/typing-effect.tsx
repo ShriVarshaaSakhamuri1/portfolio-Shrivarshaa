@@ -1,17 +1,21 @@
 import { useState, useEffect } from "react";
 
-export function TypingEffect() {
+interface TypingEffectProps {
+  textArray?: string[];
+}
+
+const defaultTextArray = [
+  "AI/ML Engineer",
+  "Data Scientist",
+  "Generative AI Engineer",
+  "MLOps Engineer",
+];
+
+export function TypingEffect({ textArray = defaultTextArray }: TypingEffectProps) {
   const [typedText, setTypedText] = useState("");
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
-
-  const textArray = [
-    "AI/ML Engineer",
-    "Data Scientist",
-    "Generative AI Engineer",
-    "MLOps Engineer"
-  ];
 
   useEffect(() => {
     const currentText = textArray[currentTextIndex];
@@ -38,7 +42,7 @@ export function TypingEffect() {
     }, typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [typedText, currentTextIndex, isDeleting, typingSpeed]);
+  }, [typedText, currentTextIndex, isDeleting, typingSpeed, textArray]);
 
   return (
     <div className="h-6 flex items-center">

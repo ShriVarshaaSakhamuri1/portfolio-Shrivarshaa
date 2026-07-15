@@ -101,6 +101,47 @@
           ]
       },
       {
+          "title": "Literature Review & Presentation: VL-Adapter",
+          "description": "Parameter-Efficient Transfer Learning for Vision-and-Language Tasks",
+          "projectType": "Research Presentation / Literature Review",
+          "dates": "April 2026",
+          "images": [
+              "/images/projects/vl-adapter/pic1.png",
+              "/images/projects/vl-adapter/pic2.png",
+              "/images/projects/vl-adapter/pic3.png",
+              "/images/projects/vl-adapter/pic4.png"
+          ],
+          "technologies": [
+              "Vision-Language Models",
+              "PEFT",
+              "Transfer Learning",
+              "CLIP",
+              "BART",
+              "T5",
+              "Hyperformer",
+              "Compacter",
+              "VQA",
+              "GQA",
+              "NLVR2",
+              "COCO Captioning",
+              "Multimodal AI",
+              "Model Evaluation"
+          ],
+          "githubUrl": "",
+          "Url": "",
+          "keyFeatures": [
+              "Conducted an in-depth survey of adapter-based PEFT methods for vision-and-language models, including CLIP, BART, T5, Hyperformer, and Compacter architectures.",
+              "Prepared and delivered a 15-minute presentation explaining down-sampling and up-sampling adapters, HyperNet-based weight generation, and low-rank PHM layers.",
+              "Summarized multi-task results across VQA, GQA, NLVR2, and COCO captioning benchmarks, focusing on model efficiency, transfer learning, and evaluation tradeoffs.",
+              "Discussed future research directions including edge deployment, zero-shot generalization, efficient multimodal adaptation, and scalable evaluation workflows."
+          ],
+          "categories": [
+              "AI/ML",
+              "Research",
+              "Academic"
+          ]
+      },
+      {
           "title": "Secure File Transfer using Blockchain and Cryptography",
           "description": "Designed a decentralized file-sharing solution using blockchain with AES and RSA for encryption.",
           "images": [

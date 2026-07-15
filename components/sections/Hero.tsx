@@ -1,6 +1,5 @@
 import { ArrowRight, ChevronDown, Code, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { TechIcons } from "./TechIcons";
 import { SocialLinks } from "./SocialLinks";
 import { TypingEffect } from "@/components/ui/typing-effect";
@@ -8,9 +7,16 @@ import { TypingEffect } from "@/components/ui/typing-effect";
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
   hideLinkedIn?: boolean;
+  roleTexts?: string[];
+  subtitle?: string;
 }
 
-export function Hero({ scrollToSection, hideLinkedIn }: HeroProps) {
+export function Hero({
+  scrollToSection,
+  hideLinkedIn,
+  roleTexts,
+  subtitle = "Building production-ready machine learning, generative AI, RAG, and agentic systems.",
+}: HeroProps) {
   return (
     <div className="w-full max-w-4xl mx-auto text-center relative z-10 py-4">
       {/* Terminal-like header */}
@@ -36,7 +42,7 @@ export function Hero({ scrollToSection, hideLinkedIn }: HeroProps) {
               <span className="text-primary">~</span>
               <span className="text-muted-foreground">role</span>
             </div>
-            <TypingEffect />
+            <TypingEffect textArray={roleTexts} />
           </div>
         </div>
       </div>
@@ -47,10 +53,11 @@ export function Hero({ scrollToSection, hideLinkedIn }: HeroProps) {
         </span>
       </h1>
 
-      <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
-        Building production-ready machine learning, generative AI, RAG, and
-        agentic systems.
-      </p>
+      {subtitle ? (
+        <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+          {subtitle}
+        </p>
+      ) : null}
 
       
       <div className="flex flex-wrap justify-center gap-3 mb-8">

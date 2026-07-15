@@ -1,12 +1,16 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { SkillCategories } from "@/components/skills";
 import { SectionContainer } from "@/components/shared";
 import skillsData from "@/data/skills.json";
+import type { SkillsData } from "@/data/skills.d";
 
-export default function SkillsSection() {
+interface SkillsSectionProps {
+  data?: SkillsData;
+}
+
+export default function SkillsSection({ data = skillsData }: SkillsSectionProps) {
   return (
     <div className="relative bg-background">
       <SectionContainer className="py-16">
@@ -19,11 +23,11 @@ export default function SkillsSection() {
         >
           <h1 className="mb-3 text-3xl font-bold md:text-4xl">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              {skillsData.sectionTitle}
+              {data.sectionTitle}
             </span>
           </h1>
           <p className="mx-auto max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
-            {skillsData.sectionDescription}
+            {data.sectionDescription}
           </p>
         </motion.div>
 
@@ -33,7 +37,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <SkillCategories categories={skillsData.categories} />
+          <SkillCategories categories={data.categories} />
         </motion.div>
       </SectionContainer>
     </div>
