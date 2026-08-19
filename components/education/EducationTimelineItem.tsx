@@ -12,7 +12,6 @@ import {
   ChevronDown,
   ChevronUp,
   MapPin,
-  FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -226,29 +225,6 @@ export default function EducationTimelineItem({
                               </Badge>
                             ))}
                           </div>
-                        </div>
-                      )}
-
-                      {/* Projects */}
-                      {education.projects && (
-                        <div>
-                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
-                            <FileText className="h-3 w-3 text-green-500" />
-                            Academic Projects
-                          </h4>
-                          <ul className="space-y-1.5">
-                            {education.projects.map((project, projectIndex) => (
-                              <li
-                                key={projectIndex}
-                                className="flex items-start gap-1.5"
-                              >
-                                <div className="h-1.5 w-1.5 rounded-full bg-green-500 mt-1.5 flex-shrink-0"></div>
-                                <span className="text-xs text-muted-foreground text-left">
-                                  {project}
-                                </span>
-                              </li>
-                            ))}
-                          </ul>
                         </div>
                       )}
                     </div>

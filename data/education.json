@@ -29,14 +29,8 @@
         "Advanced Topics in Computer Science",
         "Design and Analysis of Algorithms",
         "Numerical Methods"
-      ],
-      "projects": [
-        "Image Classification using CNN on CIFAR-10 (PyTorch)",
-        "End-to-End CI/CD Pipeline Implementation on AWS",
-        "Academica-Academic Networking Site Development",
-        "U-Net: Convolutional Networks for Biomedical Image Segmentation",
-        "Ohiohoo Skincare-Cosmetic E-commerce Website"
       ]
+      
     },
     {
       "id": 2,
@@ -44,7 +38,7 @@
       "institution": "Velagapudi Ramakrishna Siddhartha Engineering College",
       "location": "Vijayawada, India",
       "year": "Jun 2019 - May 2023",
-      "description": "Bachelor of Technology in Computer Science and Engineering with focus on Design logic,datastructures ,Computation,Programming Languages and Machine Learning.",
+      "description": "Bachelor of Technology in Computer Science and Engineering with focus on Programming Languages,Design logic,datastructures,Computation,and Machine Learning.",
       "barColor": "bg-[#4361ee]",
       "iconBgColor": "bg-[#4361ee]",
       "achievements": [
@@ -64,12 +58,7 @@
         "Statistics with R",
         "Mobile Application Development ",
         "Web Technologies"
-      ],
-      "projects": [
-        " MIME Recognition for Indian Sign Language",
-        "Sharing Logistic Information Files Securely Using Cryptographic Algorithms",
-        "Secure Transfer of files within Organization using - AES, RSA, and Decentralized Blockchain"
-    ]
+      ]
 }
 ],
     

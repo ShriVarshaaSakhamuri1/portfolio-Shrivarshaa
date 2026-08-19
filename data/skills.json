@@ -1,83 +1,89 @@
 {
   "sectionTitle": "Technical Skills",
-  "sectionDescription": "AI/ML engineering tools and platforms for model development, retrieval systems, agentic workflows, evaluation, deployment, and production operations.",
+  "sectionDescription": "Programming, machine learning, deep learning, statistics, NLP, GenAI, cloud, MLOps, databases, and visualization tools.",
   "categories": [
     {
-      "title": "Programming Languages",
+      "title": "Programming & Data",
       "icon": "Code2",
-      "skills": ["Python", "SQL", "Java", "Scala", "TypeScript"]
-    },
-    {
-      "title": "Machine Learning & Deep Learning",
-      "icon": "Brain",
       "skills": [
-        "PyTorch",
-        "TensorFlow",
-        "Scikit-learn",
-        "XGBoost",
-        "LightGBM",
-        "Predictive Modeling",
-        "Classification",
-        "Regression",
-        "Feature Engineering",
-        "Computer Vision",
-        "Transfer Learning",
-        "Anomaly Detection"
+        "Python",
+        "R",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "PySpark"
       ]
     },
     {
-      "title": "Generative AI & Agentic AI",
+      "title": "Machine Learning",
+      "icon": "Brain",
+      "skills": [
+        "Decision Trees",
+        "Random Forests",
+        "Naive Bayes",
+        "XGBoost",
+        "K-Means",
+        "DBSCAN",
+        "PCA",
+        "Linear Regression",
+        "Logistic Regression"
+      ]
+    },
+    {
+      "title": "Deep Learning",
+      "icon": "Activity",
+      "skills": [
+        "TensorFlow",
+        "Keras",
+        "PyTorch",
+        "CNNs",
+        "RNNs"
+      ]
+    },
+    {
+      "title": "Statistics & Model Evaluation",
+      "icon": "FileText",
+      "skills": [
+        "Statistical Analysis",
+        "Hypothesis Testing",
+        "Cross-Validation",
+        "F1-Score",
+        "ROC-AUC",
+        "RMSE",
+        "MAE",
+        "R²",
+        "Precision",
+        "Recall",
+        "Confusion Matrix"
+      ]
+    },
+    {
+      "title": "NLP & GenAI",
       "icon": "Bot",
       "skills": [
-        "Large Language Models",
-        "Retrieval-Augmented Generation",
-        "Agentic AI",
+        "BERT",
+        "RoBERTa",
+        "NER",
+        "NLTK",
+        "spaCy",
         "LangChain",
         "LangGraph",
         "LlamaIndex",
-        "Prompt Engineering",
-        "Tool Calling",
-        "Fine-Tuning",
-        "PEFT",
-        "LoRA",
-        "Embeddings",
-        "Vector Search"
+        "RAG",
+        "LLaMA",
+        "MCP"
       ]
     },
     {
-      "title": "Natural Language Processing",
-      "icon": "FileText",
+      "title": "Vector Databases",
+      "icon": "Database",
       "skills": [
-        "Hugging Face Transformers",
-        "Named Entity Recognition",
-        "Semantic Search",
-        "Text Classification",
-        "Question Answering",
-        "Document Intelligence"
+        "Pinecone",
+        "FAISS"
       ]
     },
     {
-      "title": "AI Evaluation & MLOps",
-      "icon": "Activity",
-      "skills": [
-        "LangSmith",
-        "RAGAS",
-        "DeepEval",
-        "MLflow",
-        "Docker",
-        "Kubernetes",
-        "FastAPI",
-        "Airflow",
-        "Model Deployment",
-        "Model Monitoring",
-        "Drift Detection",
-        "CI/CD",
-        "ONNX",
-        "vLLM"
-      ]
-    },
-    {
-      "title": "Cloud & Data Platforms",
+      "title": "Cloud & MLOps",
       "icon": "Cloud",
       "skills": [
         "AWS SageMaker",
@@ -85,42 +91,26 @@
         "EC2",
         "S3",
         "Lambda",
-        "Azure AI Foundry",
-        "Azure OpenAI",
-        "Azure Machine Learning",
-        "Google Vertex AI",
-        "Databricks",
-        "Apache Spark",
-        "PySpark"
+        "Azure ML",
+        "MLflow",
+        "Docker",
+        "Kubernetes",
+        "FastAPI",
+        "REST APIs",
+        "Git",
+        "CI/CD"
       ]
     },
     {
-      "title": "Databases & Vector Stores",
-      "icon": "Database",
-      "skills": [
-        "PostgreSQL",
-        "MySQL",
-        "MongoDB",
-        "Redis",
-        "Elasticsearch",
-        "Pinecone",
-        "FAISS",
-        "ChromaDB"
-      ]
-    },
-    {
-      "title": "Software Engineering & Tools",
+      "title": "Databases & Visualization",
       "icon": "Wrench",
       "skills": [
-        "REST APIs",
-        "Spring Boot",
-        "Microservices",
-        "Git",
-        "GitHub",
-        "Linux",
-        "Jupyter Notebook",
-        "VS Code",
-        "Jira"
+        "PostgreSQL",
+        "SQL Server",
+        "MySQL",
+        "MongoDB",
+        "Power BI",
+        "Tableau"
       ]
     }
   ]

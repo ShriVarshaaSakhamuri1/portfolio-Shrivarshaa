@@ -56,6 +56,20 @@ const itemVariants = {
   },
 };
 
+function renderInlineEmphasis(text: string) {
+  return text.split(/(\*\*.*?\*\*)/g).map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={`${part}-${index}`} className="font-semibold text-foreground">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+
+    return part;
+  });
+}
+
 export default function AboutPage({
   overview,
   subtitle = "Building production-ready machine learning, generative AI, RAG, and agentic systems.",
@@ -136,7 +150,7 @@ export default function AboutPage({
                           key={paragraph}
                           className="text-sm leading-7 text-muted-foreground"
                         >
-                          {paragraph}
+                          {renderInlineEmphasis(paragraph)}
                         </p>
                       ))}
                     </CardContent>

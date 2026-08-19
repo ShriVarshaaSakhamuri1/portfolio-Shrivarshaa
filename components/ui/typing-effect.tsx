@@ -6,9 +6,7 @@ interface TypingEffectProps {
 
 const defaultTextArray = [
   "AI/ML Engineer",
-  "Data Scientist",
-  "Generative AI Engineer",
-  "MLOps Engineer",
+  "Data Scientist"
 ];
 
 export function TypingEffect({ textArray = defaultTextArray }: TypingEffectProps) {

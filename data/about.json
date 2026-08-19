@@ -1,13 +1,12 @@
 {
   "overview": {
     "name": "Shrivarshaa Sakhamuri",
-    "title": "AI/ML Engineer",
+    "title": "ML Engineer / Data Scientist",
     "location": "Montgomery, AL",
     "description": [
-      "I build production-oriented machine learning and generative AI systems that turn complex data into usable, measurable solutions. My work spans predictive modeling, deep learning, natural language processing, Retrieval-Augmented Generation, agentic workflows, and scalable AI services.",
-      "I have worked with Python, SQL, PyTorch, TensorFlow, Scikit-learn, XGBoost, LangChain, LangGraph, Hugging Face, FastAPI, Spark, and cloud AI platforms. I am particularly interested in building systems that combine strong model performance with reliable data pipelines, evaluation, monitoring, and deployment.",
-      "My experience includes fraud and anomaly detection, semantic search, document intelligence, model-serving APIs, distributed machine learning pipelines, vector databases, and multi-agent workflows. I focus on more than model development-I also consider latency, observability, retrieval quality, hallucination control, data drift, scalability, and maintainability.",
-      "I completed my Master's degree in Computer Science at the University of Texas at Arlington, where I focused on artificial intelligence, machine learning, cloud computing, and distributed systems. I enjoy solving ambiguous engineering problems and converting experimental AI workflows into dependable applications."
+      "I like building things that move from **\"interesting idea\" to \"actually useful.\"**",
+      "I'm an ML Engineer / Data Scientist focused on turning messy data into models, pipelines, and AI systems people can rely on from predictive analytics and computer vision to NLP, RAG, and production ML workflows.What I enjoy most is the space where experimentation meets engineering: figuring out what works, measuring it honestly, improving it, and turning it into something real.",
+      "When I'm not tuning models or debugging pipelines, I'm usually exploring a new tool, experimenting with an idea, or building something just because I'm curious to see if it works."
     ],
     "technologies": {
       "languages": ["Python", "SQL", "Java", "Scala", "TypeScript"],
