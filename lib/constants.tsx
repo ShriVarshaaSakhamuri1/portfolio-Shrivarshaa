@@ -12,6 +12,7 @@ interface Section {
   id: string;
   label: string;
   icon: React.ReactNode;
+  targetId?: string;
 }
 
 export const SECTIONS: Section[] = [
@@ -23,11 +24,11 @@ export const SECTIONS: Section[] = [
     icon: <Briefcase className="h-4 w-4" />,
   },
   { id: "projects", label: "Projects", icon: <Code className="h-4 w-4" /> },
+  { id: "skills", label: "Skills", icon: <Wrench className="h-4 w-4" /> },
   {
     id: "education",
     label: "Education",
     icon: <GraduationCap className="h-4 w-4" />,
   },
-  { id: "skills", label: "Skills", icon: <Wrench className="h-4 w-4" /> },
   { id: "contact", label: "Contact", icon: <Mail className="h-4 w-4" /> },
 ];

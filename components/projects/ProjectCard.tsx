@@ -30,7 +30,7 @@ interface ProjectCardProps {
 
 function BlankProjectImage() {
   return (
-    <div className="w-full h-full bg-black flex items-center justify-center">
+    <div className="flex h-full w-full items-center justify-center bg-black">
       <img
         src="/nopreview.png"
         alt="No Preview Available"
@@ -68,7 +68,7 @@ function ImageCarousel({
   }
 
   return (
-    <div className="relative group overflow-hidden">
+    <div className="group relative overflow-hidden bg-black">
       <motion.div
         className="aspect-[16/9] relative"
         initial={false}
@@ -79,7 +79,7 @@ function ImageCarousel({
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className="w-full h-full flex-shrink-0 bg-black/5"
+              className="h-full w-full flex-shrink-0 bg-black"
               initial={false}
               animate={{ opacity: index === currentIndex ? 1 : 0 }}
               transition={{ duration: 0.3 }}
@@ -90,7 +90,7 @@ function ImageCarousel({
                 <img
                   src={image}
                   alt={`Project screenshot ${index + 1}`}
-                  className="w-full h-full object-contain"
+                  className="h-full w-full object-contain"
                   onError={() => handleImageError(image)}
                 />
               )}
@@ -105,7 +105,7 @@ function ImageCarousel({
               e.stopPropagation();
               onPrev();
             }}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/80 text-foreground/80 hover:text-foreground hover:bg-background p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute left-2 top-1/2 -translate-y-1/2 rounded-md border border-[var(--border-raw)] bg-background/90 p-1 text-foreground/80 opacity-0 transition-opacity hover:text-primary group-hover:opacity-100"
           >
             <ChevronLeft size={16} />
           </button>
@@ -114,7 +114,7 @@ function ImageCarousel({
               e.stopPropagation();
               onNext();
             }}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/80 text-foreground/80 hover:text-foreground hover:bg-background p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md border border-[var(--border-raw)] bg-background/90 p-1 text-foreground/80 opacity-0 transition-opacity hover:text-primary group-hover:opacity-100"
           >
             <ChevronRight size={16} />
           </button>
@@ -123,7 +123,7 @@ function ImageCarousel({
               <motion.div
                 key={index}
                 className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                  index === currentIndex ? "bg-primary" : "bg-primary/30"
+                  index === currentIndex ? "bg-primary" : "bg-primary/25"
                 }`}
                 initial={false}
                 animate={{ scale: index === currentIndex ? 1.2 : 1 }}
@@ -166,13 +166,13 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <>
       <motion.div
-        className="interactive-card group relative bg-card rounded-lg overflow-hidden border shadow-sm cursor-pointer h-[320px] flex flex-col"
+        className="interactive-card group relative flex h-[430px] cursor-pointer flex-col overflow-hidden rounded-lg border"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setIsModalOpen(true)}
       >
         {/* Project Image */}
-        <div className="aspect-[16/9] relative bg-black/5">
+        <div className="relative aspect-[16/9] border-b border-[var(--border-raw)] bg-black">
           {!project.images ||
           !Array.isArray(project.images) ||
           project.images.length === 0 ? (
@@ -186,30 +186,30 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               showControls={isHovered}
             />
           )}
-          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white text-sm">View Details</span>
+          <div className="absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity group-hover:opacity-100">
+            <span className="font-mono text-xs text-primary">View Details</span>
           </div>
         </div>
 
         {/* Project Info */}
-        <div className="p-3 flex-1 flex flex-col">
-          <h3 className="font-semibold text-sm mb-1.5 line-clamp-1">
+        <div className="flex flex-1 flex-col p-5">
+          <h3 className="mb-2 line-clamp-2 text-base font-semibold leading-snug text-foreground">
             {project.title}
           </h3>
           {(project.projectType || project.dates) && (
-            <p className="text-[10px] font-medium text-primary mb-1.5 line-clamp-1">
+            <p className="mb-3 line-clamp-1 font-mono text-[11px] font-medium text-primary">
               {[project.projectType, project.dates].filter(Boolean).join(" / ")}
             </p>
           )}
-          <p className="text-xs text-muted-foreground mb-2 line-clamp-2 flex-1">
+          <p className="mb-4 line-clamp-3 flex-1 text-sm leading-6 text-muted-foreground">
             {project.description}
           </p>
-          <div className="flex flex-wrap gap-1">
+          <div className="mb-4 flex flex-wrap gap-2">
             {project.technologies.slice(0, 4).map((tech, index) => (
               <Badge
                 key={index}
                 variant="outline"
-                className="text-[10px] px-1.5 py-0 bg-primary/5 text-primary border-primary/20"
+                className="rounded-md border-[var(--border-raw)] bg-[var(--surface-elevated)] px-2 py-1 font-mono text-[10px] text-muted-foreground"
               >
                 {tech}
               </Badge>
@@ -217,11 +217,15 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             {project.technologies.length > 4 && (
               <Badge
                 variant="outline"
-                className="text-[10px] px-1.5 py-0 bg-muted text-muted-foreground border-muted"
+                className="rounded-md border-[var(--border-raw)] bg-[var(--surface-elevated)] px-2 py-1 font-mono text-[10px] text-muted-foreground"
               >
                 +{project.technologies.length - 4}
               </Badge>
             )}
+          </div>
+          <div className="mt-auto flex items-center gap-2 font-mono text-xs text-primary">
+            <span>View Project</span>
+            <ExternalLink className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
           </div>
         </div>
       </motion.div>
@@ -229,25 +233,25 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       {/* Project Details Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-50 p-2"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-background/85 p-3 backdrop-blur-sm"
           onClick={(e) => {
             if (e.target === e.currentTarget) {
               setIsModalOpen(false);
             }
           }}
         >
-          <div className="bg-card rounded-lg max-w-2xl w-full relative">
+          <div className="terminal-panel relative max-h-[90vh] w-full max-w-3xl overflow-y-auto">
             {/* Close button */}
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute right-2 top-2 text-muted-foreground hover:text-foreground z-50"
+              className="absolute right-3 top-3 z-50 text-muted-foreground hover:text-primary"
             >
               <X size={14} />
             </button>
 
-            <div className="p-3">
+            <div className="p-5">
               {/* Header */}
-              <h2 className="text-lg font-bold text-primary mb-2">
+              <h2 className="mb-2 text-xl font-semibold text-foreground">
                 {project.title}
               </h2>
               {(project.projectType || project.dates) && (

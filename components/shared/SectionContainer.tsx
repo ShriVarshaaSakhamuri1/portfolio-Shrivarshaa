@@ -10,7 +10,7 @@ export function SectionContainer({ children, className }: SectionContainerProps)
   return (
     <main
       className={cn(
-        "relative mx-auto min-h-screen w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8",
+        "relative mx-auto min-h-screen w-full max-w-[1360px] px-5 py-20 sm:px-8 lg:px-10 lg:py-24",
         className
       )}
     >

@@ -1,7 +1,5 @@
 import { ArrowRight, ChevronDown, Code, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { TechIcons } from "./TechIcons";
-import { SocialLinks } from "./SocialLinks";
 import { TypingEffect } from "@/components/ui/typing-effect";
 
 interface HeroProps {
@@ -13,80 +11,99 @@ interface HeroProps {
 
 export function Hero({
   scrollToSection,
-  hideLinkedIn,
+  hideLinkedIn: _hideLinkedIn,
   roleTexts,
   subtitle = "Building production-ready machine learning, generative AI, RAG, and agentic systems.",
 }: HeroProps) {
+  const displaySubtitle =
+    subtitle ||
+    "Building production-ready machine learning, GenAI, RAG, and data systems from experimentation to deployment.";
+
   return (
-    <div className="w-full max-w-4xl mx-auto text-center relative z-10 py-4">
-      {/* Terminal-like header */}
-      <div className="mb-4 mx-auto max-w-md pt-16">
-        <div className="bg-card border rounded-lg shadow-lg overflow-hidden">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 bg-muted/50 border-b">
-            <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-            <div className="ml-2 text-xs font-mono text-muted-foreground">
-              portfolio.dev
+    <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1360px] items-center px-5 pb-16 pt-24 sm:px-8 lg:px-10 lg:pt-16">
+      <div className="grid w-full items-center gap-10 lg:grid-cols-[minmax(0,1fr)_420px]">
+        <div className="max-w-3xl text-left">
+          <p className="terminal-label mb-5">&gt; Hi, my name is</p>
+          <h1 className="mb-4 text-4xl font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+            Shrivarshaa Sakhamuri.
+          </h1>
+          <TypingEffect
+            textArray={
+              roleTexts ?? [
+                "ML Engineer",
+                "Data Scientist",
+                "AI/ML Engineer",
+                "Machine Learning Engineer",
+              ]
+            }
+            staticText="ML Engineer / Data Scientist"
+            className="mb-6 font-mono text-lg text-primary sm:text-xl"
+          />
+          <p className="mb-8 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
+            {displaySubtitle}
+          </p>
+
+          <div className="flex flex-wrap gap-3">
+            <Button
+              className="group rounded-md border border-primary/20 bg-primary/10 px-5 text-primary hover:bg-primary/15"
+              onClick={() => scrollToSection("projects")}
+            >
+              <Code className="mr-2 h-4 w-4" />
+              <span>View my work</span>
+              <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Button
+              variant="outline"
+              className="rounded-md border-[var(--border-raw)] bg-[var(--surface)] px-5 text-muted-foreground hover:border-primary/30 hover:bg-primary/10 hover:text-primary"
+              onClick={() => scrollToSection("contact")}
+            >
+              <Mail className="mr-2 h-4 w-4" />
+              Contact
+            </Button>
+          </div>
+        </div>
+
+        <div className="terminal-panel overflow-hidden">
+          <div className="flex items-center border-b border-[var(--border-raw)] bg-[var(--surface-elevated)] px-4 py-3">
+            <div className="flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-[var(--red-accent)]" />
+              <span className="h-2.5 w-2.5 rounded-full bg-[var(--yellow-accent)]" />
+              <span className="h-2.5 w-2.5 rounded-full bg-primary" />
+            </div>
+            <div className="ml-auto font-mono text-xs text-muted-foreground">
+              system_info.sh
             </div>
           </div>
-          <div className="p-3 font-mono text-sm text-left">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="text-green-500">➜</span>
-              <span className="text-primary">~</span>
-              <span className="text-muted-foreground">who-am-i?</span>
+          <div className="space-y-4 p-5 font-mono text-sm">
+            {[
+              ["name", "Shrivarshaa Sakhamuri"],
+              ["role", "ML Engineer / Data Scientist"],
+              ["focus", "ML - GenAI - Data"],
+              ["availability", "Open to Opportunities"],
+              ["relocation", "Open to Relocate"],
+            ].map(([label, value]) => (
+              <div
+                key={label}
+                className="grid grid-cols-[112px_1fr] gap-3 text-sm"
+              >
+                <span className="text-muted-foreground">{label}:</span>
+                <span className="text-foreground">{value}</span>
+              </div>
+            ))}
+            <div className="border-t border-[var(--border-raw)] pt-5 text-primary">
+              &gt; ready to build something impactful
+              <span className="animate-blink">_</span>
             </div>
-            <div className="text-base font-semibold">Shrivarshaa Sakhamuri</div>
-            <div className="flex items-center gap-2 mt-2 mb-1">
-              <span className="text-green-500">➜</span>
-              <span className="text-primary">~</span>
-              <span className="text-muted-foreground">role</span>
-            </div>
-            <TypingEffect textArray={roleTexts} />
           </div>
         </div>
       </div>
 
-      <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
-        <span className="bg-[linear-gradient(90deg,#7c3aed_0%,#9333ea_50%,#c026d3_100%)] text-transparent bg-clip-text">
-          Shrivarshaa Sakhamuri
-        </span>
-      </h1>
-
-      {subtitle ? (
-        <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
-          {subtitle}
-        </p>
-      ) : null}
-
-      
-      <div className="flex flex-wrap justify-center gap-3 mb-8">
-        <Button
-          className="rounded-full px-6 py-5 text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 group"
-          onClick={() => scrollToSection("projects")}
-        >
-          <Code className="mr-2 h-4 w-4" />
-          <span>View Projects</span>
-          <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
-        </Button>
-        <Button
-          variant="outline"
-          className="rounded-full px-6 py-5 text-sm font-medium border-2 hover:bg-secondary/10 transition-all duration-300"
-          onClick={() => scrollToSection("contact")}
-        >
-          <Mail className="mr-2 h-4 w-4" /> Contact Me
-        </Button>
-      </div>
-
-      <TechIcons />
-      <SocialLinks hideLinkedIn={hideLinkedIn} />
-
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
         <Button
           variant="ghost"
           size="icon"
           onClick={() => scrollToSection("about")}
-          className="rounded-full"
+          className="rounded-md text-muted-foreground hover:bg-primary/10 hover:text-primary"
         >
           <ChevronDown className="h-5 w-5" />
           <span className="sr-only">Scroll down</span>

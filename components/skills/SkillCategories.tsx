@@ -38,14 +38,14 @@ export default function SkillCategories({ categories }: SkillCategoriesProps) {
         return (
           <Card
             key={category.title}
-            className="h-full border-border/80 bg-card transition-colors duration-200 hover:border-primary/40 hover:shadow-md"
+            className="interactive-card h-full"
           >
             <CardHeader className="p-5 pb-3">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-md border border-primary/15 bg-primary/10 text-primary">
                   <Icon className="h-5 w-5" />
                 </div>
-                <CardTitle className="text-lg leading-tight">
+                <CardTitle className="text-base leading-tight text-foreground">
                   {category.title}
                 </CardTitle>
               </div>

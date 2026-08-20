@@ -13,20 +13,19 @@ interface SkillsSectionProps {
 export default function SkillsSection({ data = skillsData }: SkillsSectionProps) {
   return (
     <div className="relative bg-background">
-      <SectionContainer className="py-16">
+      <SectionContainer>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-10 text-center"
+          className="section-heading"
         >
-          <h1 className="mb-3 text-3xl font-bold md:text-4xl">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              {data.sectionTitle}
-            </span>
+          <p className="terminal-label mb-3">&gt; skills --list</p>
+          <h1 className="mb-3 text-2xl font-semibold text-foreground md:text-3xl">
+            {data.sectionTitle}
           </h1>
-          <p className="mx-auto max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
+          <p className="max-w-2xl text-sm leading-7 text-muted-foreground">
             {data.sectionDescription}
           </p>
         </motion.div>

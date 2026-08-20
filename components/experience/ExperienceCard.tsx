@@ -5,7 +5,6 @@ import {
   ArrowRight,
   Building2,
   CalendarDays,
-  CheckCircle2,
   MapPin,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,7 +25,7 @@ interface ExperienceCardProps {
 }
 
 export function ExperienceCard({ job, index }: ExperienceCardProps) {
-  const previewAchievements = job.achievements.slice(0, 2);
+  const previewAchievements = job.achievements.slice(0, 3);
 
   return (
     <motion.article
@@ -39,45 +38,55 @@ export function ExperienceCard({ job, index }: ExperienceCardProps) {
       <Dialog>
         <DialogTrigger asChild>
           <button className="group h-full w-full rounded-lg text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-            <Card className="flex h-full min-h-[340px] flex-col overflow-hidden border-border/80 bg-card transition-colors duration-200 hover:border-primary/40 hover:shadow-md group-focus-visible:border-primary/40 min-[900px]:h-[390px]">
-              <CardHeader className="space-y-4 p-5 sm:p-6">
+            <Card className="interactive-card flex h-full min-h-[420px] flex-col overflow-hidden group-focus-visible:border-primary/40">
+              <CardHeader className="space-y-4 p-5">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div className="min-w-0">
-                    <p className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                    <p className="flex items-center gap-2 font-mono text-xs text-muted-foreground">
                       <Building2 className="h-4 w-4 flex-shrink-0 text-primary" />
                       <span className="truncate">{job.company}</span>
                     </p>
-                    <CardTitle className="mt-2 line-clamp-2 text-lg font-semibold leading-tight text-foreground sm:text-xl">
+                    <CardTitle className="mt-2 line-clamp-2 text-xl font-semibold leading-tight text-foreground">
                       {job.title}
                     </CardTitle>
                   </div>
-                  <div className="shrink-0 space-y-1 text-sm text-muted-foreground sm:text-right">
+                  <div className="shrink-0 space-y-1 font-mono text-xs text-muted-foreground sm:text-right">
                     <p className="flex items-center gap-2 sm:justify-end">
-                      <MapPin className="h-4 w-4 flex-shrink-0 text-secondary" />
+                      <MapPin className="h-4 w-4 flex-shrink-0 text-primary" />
                       <span>{job.location}</span>
                     </p>
                     <p className="flex items-center gap-2 sm:justify-end">
-                      <CalendarDays className="h-4 w-4 flex-shrink-0 text-secondary" />
+                      <CalendarDays className="h-4 w-4 flex-shrink-0 text-primary" />
                       <span>{job.period}</span>
                     </p>
                   </div>
                 </div>
               </CardHeader>
-              <CardContent className="flex flex-1 flex-col justify-between space-y-5 px-5 pb-5 sm:px-6 sm:pb-6">
+              <CardContent className="flex flex-1 flex-col justify-between space-y-5 px-5 pb-5">
+                {job.description ? (
+                  <p className="text-sm leading-7 text-muted-foreground">
+                    {job.description}
+                  </p>
+                ) : null}
                 <ul className="space-y-3">
                   {previewAchievements.map((achievement) => (
                     <li
                       key={achievement}
                       className="flex gap-3 text-sm leading-6"
                     >
-                      <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-primary" />
+                      <span className="mt-0.5 font-mono text-primary">•</span>
                       <span className="line-clamp-3 text-muted-foreground">
                         {achievement}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <div className="flex items-center gap-2 text-sm font-medium text-primary">
+                <div className="flex flex-wrap gap-2">
+                  {job.technologies.slice(0, 6).map((technology) => (
+                    <TechnologyTag key={technology}>{technology}</TechnologyTag>
+                  ))}
+                </div>
+                <div className="flex items-center gap-2 font-mono text-xs font-medium text-primary">
                   View details
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
@@ -98,11 +107,11 @@ export function ExperienceCard({ job, index }: ExperienceCardProps) {
                 </p>
                 <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-5">
                   <p className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-secondary" />
+                    <MapPin className="h-4 w-4 text-primary" />
                     {job.location}
                   </p>
                   <p className="flex items-center gap-2">
-                    <CalendarDays className="h-4 w-4 text-secondary" />
+                    <CalendarDays className="h-4 w-4 text-primary" />
                     {job.period}
                   </p>
                 </div>
@@ -119,7 +128,7 @@ export function ExperienceCard({ job, index }: ExperienceCardProps) {
           <ul className="space-y-3">
             {job.achievements.map((achievement) => (
               <li key={achievement} className="flex gap-3 text-sm leading-6">
-                <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-primary" />
+                <span className="mt-0.5 font-mono text-primary">•</span>
                 <span className="text-muted-foreground">{achievement}</span>
               </li>
             ))}

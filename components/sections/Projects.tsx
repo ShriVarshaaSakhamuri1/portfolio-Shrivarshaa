@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "@/components/projects/ProjectCard";
+import { SectionContainer } from "@/components/shared";
 import projectsJson from "@/data/projects.json";
 
 interface Project {
@@ -30,9 +31,8 @@ interface ProjectsData {
 const projects = projectsJson as unknown as ProjectsData;
 
 const categories = [
-  "All",
-  "Full Stack",
   "AI/ML",
+  "Full Stack",
   "DevOps",
   "Security",
 ];
@@ -42,46 +42,38 @@ interface ProjectsSectionProps {
 }
 
 export function ProjectsSection({ description }: ProjectsSectionProps) {
-  const [activeTab, setActiveTab] = useState("All");
+  const [activeTab, setActiveTab] = useState("AI/ML");
 
   const filteredProjects = projects.projects.filter((project) =>
-    activeTab === "All" ? true : project.categories.includes(activeTab)
+    project.categories.includes(activeTab)
   );
 
   return (
     <section className="relative bg-background" id="projects">
-      {/* Background elements */}
-      <div className="absolute inset-0 overflow-hidden -z-10">
-        <div className="absolute top-1/4 left-1/4 w-56 h-56 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-36 h-36 bg-secondary/5 rounded-full blur-3xl"></div>
-        <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">
-            <span className="text-primary">Personal</span>{" "}
-            <span className="text-secondary">Projects</span>
+      <SectionContainer>
+        <div className="section-heading">
+          <p className="terminal-label mb-3">&gt; selected_work</p>
+          <h2 className="mb-3 text-2xl font-semibold text-foreground md:text-3xl">
+            Personal Projects
           </h2>
-          <div className="h-0.5 w-12 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
-          <p className="mt-2 text-xs text-muted-foreground max-w-xl mx-auto">
+          <p className="max-w-2xl text-sm leading-7 text-muted-foreground">
             {description ??
               "A showcase of my most significant projects, demonstrating my skills and expertise in computer science engineering."}
           </p>
         </div>
 
         {/* Project Categories Tabs */}
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex bg-muted/60 rounded-lg p-1 gap-1">
+        <div className="mb-8 flex justify-start overflow-x-auto">
+          <div className="inline-flex gap-1 rounded-lg border border-[var(--border-raw)] bg-[var(--surface)] p-1">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveTab(category)}
-                className={`px-4 py-2 rounded-md text-sm transition-colors
+                className={`rounded-md px-4 py-2 font-mono text-xs transition-colors
                   ${
                     activeTab === category
-                      ? "bg-background text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
+                      ? "bg-primary/10 text-primary"
+                      : "text-muted-foreground hover:bg-[var(--surface-hover)] hover:text-foreground"
                   }`}
               >
                 {category}
@@ -91,7 +83,7 @@ export function ProjectsSection({ description }: ProjectsSectionProps) {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -103,7 +95,7 @@ export function ProjectsSection({ description }: ProjectsSectionProps) {
             </motion.div>
           ))}
         </div>
-      </div>
+      </SectionContainer>
     </section>
   );
 }

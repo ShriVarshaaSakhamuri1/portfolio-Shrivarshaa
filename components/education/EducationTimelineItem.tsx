@@ -70,14 +70,9 @@ export default function EducationTimelineItem({
       variants={containerVariants}
     >
       {/* Timeline Icon */}
-      <div className="absolute left-6 md:left-1/2 transform -translate-x-1/2 -mt-2 z-10">
-        <div
-          className={cn(
-            "w-8 h-8 rounded-full flex items-center justify-center",
-            education.iconBgColor
-          )}
-        >
-          <Icon className="h-4 w-4 text-white" />
+      <div className="absolute left-6 z-10 -mt-2 -translate-x-1/2 transform md:left-1/2">
+        <div className="flex h-8 w-8 items-center justify-center rounded-md border border-primary/20 bg-primary/10">
+          <Icon className="h-4 w-4 text-primary" />
         </div>
       </div>
 
@@ -92,7 +87,7 @@ export default function EducationTimelineItem({
       >
         <Badge
           variant="outline"
-          className="flex items-center gap-1.5 px-2 py-1 bg-muted/30 text-xs"
+          className="flex items-center gap-1.5 rounded-md border-[var(--border-raw)] bg-[var(--surface)] px-2 py-1 font-mono text-xs text-muted-foreground"
         >
           <Calendar className="h-3 w-3" />
           <span>{education.year}</span>
@@ -111,7 +106,7 @@ export default function EducationTimelineItem({
           <Card
             className={cn(
               "interactive-card overflow-hidden",
-              isExpanded ? "shadow-lg" : ""
+              isExpanded ? "border-primary/30" : ""
             )}
           >
             <CardHeader className="p-3">
@@ -119,12 +114,7 @@ export default function EducationTimelineItem({
                 <div>
                   <CardTitle
                     className={cn(
-                      "text-base text-primary",
-                      education.barColor === "bg-[#d53f8c]"
-                        ? "text-secondary"
-                        : education.barColor === "bg-[#4361ee]"
-                          ? "text-primary"
-                          : "text-green-500"
+                      "text-base text-foreground"
                     )}
                   >
                     {education.title}
@@ -154,7 +144,7 @@ export default function EducationTimelineItem({
                 </Button>
               </div>
             </CardHeader>
-            <div className={cn("h-1 w-full", education.barColor)}></div>
+            <div className="h-px w-full bg-[var(--border-raw)]"></div>
             <CardContent className="pt-4">
               {education.grade && (
                 <div className="flex items-center gap-1.5 mb-3">
@@ -184,7 +174,7 @@ export default function EducationTimelineItem({
                       {education.achievements && (
                         <div className="mb-3 text-left">
                           <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5 text-left">
-                            <Award className="h-3 w-3 text-yellow-500" />
+                            <Award className="h-3 w-3 text-primary" />
                             Key Achievements
                           </h4>
                           <ul className="space-y-2">
@@ -195,7 +185,7 @@ export default function EducationTimelineItem({
                                   className="flex items-start gap-2 text-left"
                                 >
                                   <span className="mt-0.5 flex h-3.5 w-3.5 flex-shrink-0 items-center justify-center">
-                                    <Award className="h-3 w-3 text-yellow-400" />
+                                    <Award className="h-3 w-3 text-primary" />
                                   </span>
                                   <span className="min-w-0 flex-1 text-xs leading-relaxed text-muted-foreground">
                                     {achievement}
@@ -211,7 +201,7 @@ export default function EducationTimelineItem({
                       {education.courses && (
                         <div className="mb-3 text-left">
                           <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5 text-left">
-                            <BookOpen className="h-3 w-3 text-blue-500" />
+                            <BookOpen className="h-3 w-3 text-primary" />
                             Notable Courses
                           </h4>
                           <div className="flex flex-wrap items-start gap-2">
@@ -219,7 +209,7 @@ export default function EducationTimelineItem({
                               <Badge
                                 key={courseIndex}
                                 variant="outline"
-                                className="m-0 max-w-full whitespace-normal bg-muted/30 px-2 py-1 text-left text-[10px] leading-relaxed"
+                                className="m-0 max-w-full whitespace-normal rounded-md border-[var(--border-raw)] bg-[var(--surface-elevated)] px-2 py-1 text-left font-mono text-[10px] leading-relaxed text-muted-foreground"
                               >
                                 {course}
                               </Badge>

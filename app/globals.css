@@ -4,48 +4,62 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 328 73% 41%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --background: 160 18% 3%;
+    --background-secondary: #0a0e0c;
+    --surface: #0d1110;
+    --surface-hover: #111714;
+    --surface-elevated: #121815;
+    --border-raw: #202622;
+    --border-hover: #334139;
+    --text-primary: #f3f5f4;
+    --text-secondary: #a2aaa6;
+    --text-muted: #6f7873;
+    --terminal-green: #57f287;
+    --terminal-green-soft: #3ddc78;
+    --terminal-green-muted: rgba(87, 242, 135, 0.12);
+    --red-accent: #ff5c64;
+    --yellow-accent: #f4c95d;
+    --foreground: 150 9% 96%;
+    --card: 160 13% 6%;
+    --card-foreground: 150 9% 96%;
+    --popover: 160 13% 6%;
+    --popover-foreground: 150 9% 96%;
+    --primary: 139 85% 65%;
+    --primary-foreground: 160 18% 3%;
+    --secondary: 142 70% 55%;
+    --secondary-foreground: 160 18% 3%;
+    --muted: 150 11% 10%;
+    --muted-foreground: 150 5% 65%;
+    --accent: 150 11% 10%;
+    --accent-foreground: 150 9% 96%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 221.2 83.2% 53.3%;
+    --border: 150 9% 14%;
+    --input: 150 9% 14%;
+    --ring: 139 85% 65%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 240 10% 4%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 6%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 6%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 328 73% 41%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --background: 160 18% 3%;
+    --foreground: 150 9% 96%;
+    --card: 160 13% 6%;
+    --card-foreground: 150 9% 96%;
+    --popover: 160 13% 6%;
+    --popover-foreground: 150 9% 96%;
+    --primary: 139 85% 65%;
+    --primary-foreground: 160 18% 3%;
+    --secondary: 142 70% 55%;
+    --secondary-foreground: 160 18% 3%;
+    --muted: 150 11% 10%;
+    --muted-foreground: 150 5% 65%;
+    --accent: 150 11% 10%;
+    --accent-foreground: 150 9% 96%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 221.2 83.2% 53.3%;
+    --border: 150 9% 14%;
+    --input: 150 9% 14%;
+    --ring: 139 85% 65%;
   }
 }
 
@@ -55,6 +69,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    color: var(--text-primary);
   }
   html {
     scroll-behavior: smooth;
@@ -63,17 +78,42 @@
 
 @layer components {
   .interactive-card {
-    border-color: hsl(var(--border));
+    background: var(--surface);
+    border-color: var(--border-raw);
+    box-shadow: none;
     transition:
       border-color 0.2s ease,
-      box-shadow 0.2s ease,
+      background-color 0.2s ease,
       transform 0.2s ease;
   }
 
   .interactive-card:hover,
   .interactive-card:focus-within {
-    border-color: hsl(var(--primary));
-    box-shadow: 0 8px 24px rgb(37 99 235 / 10%);
+    background: var(--surface-hover);
+    border-color: var(--border-hover);
+    box-shadow: none;
+    transform: translateY(-2px);
+  }
+
+  .terminal-panel {
+    background: var(--surface);
+    border: 1px solid var(--border-raw);
+    border-radius: 8px;
+  }
+
+  .terminal-label {
+    color: var(--terminal-green);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0;
+  }
+
+  .section-heading {
+    border-bottom: 1px solid var(--border-raw);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    text-align: left;
   }
 }
 
@@ -81,12 +121,12 @@
 .bg-grid-pattern {
   background-image: linear-gradient(
       to right,
-      hsl(var(--foreground) / 0.05) 1px,
+      rgba(87, 242, 135, 0.045) 1px,
       transparent 1px
     ),
     linear-gradient(
       to bottom,
-      hsl(var(--foreground) / 0.05) 1px,
+      rgba(87, 242, 135, 0.045) 1px,
       transparent 1px
     );
   background-size: 20px 20px;

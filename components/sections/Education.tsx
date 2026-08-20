@@ -39,11 +39,8 @@ const categoryIcons = {
  * Includes animations, expandable content, and a progress bar.
  */
 export default function EducationPage() {
-  // State for expanded education and certificate items
+  // State for expanded education items
   const [expandedEducation, setExpandedEducation] = useState<number | null>(0);
-  const [expandedCertificate, setExpandedCertificate] = useState<number | null>(
-    null
-  );
   const [activeTab, setActiveTab] = useState("formal"); // State for active tab
   const containerRef = useRef<HTMLDivElement>(null); // Ref for the container
   const { scrollYProgress } = useScroll(); // Scroll progress for animations
@@ -54,42 +51,28 @@ export default function EducationPage() {
     setExpandedEducation(expandedEducation === id ? null : id);
   };
 
-  // Toggle expanded state for certificates
-  const toggleCertificateExpand = (id: number) => {
-    setExpandedCertificate(expandedCertificate === id ? null : id);
-  };
-
   return (
     <div className="flex min-h-screen bg-background">
       {/* Main Content */}
       <div className="flex-1 relative w-full">
-        {/* Background elements */}
-        <div className="absolute inset-0 overflow-hidden -z-10">
-          <div className="absolute top-1/4 left-1/4 w-56 h-56 bg-primary/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-36 h-36 bg-secondary/5 rounded-full blur-3xl"></div>
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
-          <Particles />
-        </div>
-
         {/* Progress bar */}
         <motion.div
           className="fixed top-0 left-0 right-0 h-1 bg-primary z-50 origin-left"
           style={{ scaleX }}
         />
 
-        <main className="relative py-8 px-6 md:px-8 mx-auto min-h-screen">
+        <main className="relative mx-auto min-h-screen w-full max-w-[1360px] px-5 py-20 sm:px-8 lg:px-10 lg:py-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-6"
+            className="section-heading"
           >
-            <h1 className="text-2xl md:text-3xl font-bold mb-2">
-              <span className="text-primary">Education</span>{" "}
-              <span className="text-secondary">Journey</span>
+            <p className="terminal-label mb-3">&gt; education</p>
+            <h1 className="mb-3 text-2xl font-semibold text-foreground md:text-3xl">
+              Education Journey
             </h1>
-            <div className="h-0.5 w-12 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
-            <p className="mt-2 text-xs text-muted-foreground max-w-xl mx-auto">
+            <p className="max-w-2xl text-sm leading-7 text-muted-foreground">
               {educationData.sectionDescription}
             </p>
           </motion.div>
@@ -101,8 +84,8 @@ export default function EducationPage() {
             onValueChange={setActiveTab}
             className="mb-6"
           >
-            <div className="flex justify-center mb-4">
-              <TabsList className="grid grid-cols-3 w-full max-w-xs">
+            <div className="mb-6 flex justify-start">
+              <TabsList className="grid w-full max-w-sm grid-cols-3 border border-[var(--border-raw)] bg-[var(--surface)]">
                 <TabsTrigger value="formal">Formal</TabsTrigger>
                 <TabsTrigger value="certifications">Certificates</TabsTrigger>
                 <TabsTrigger value="courses">Courses</TabsTrigger>
@@ -113,7 +96,7 @@ export default function EducationPage() {
             <TabsContent value="formal" className="space-y-0">
               <div className="relative" ref={containerRef}>
                 {/* Timeline Line */}
-                <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary/50 transform md:-translate-x-1/2"></div>
+                <div className="absolute left-8 top-0 bottom-0 w-px bg-[var(--border-raw)] md:left-1/2 md:-translate-x-1/2"></div>
 
                 {/* Education Items */}
                 {educationData.formalEducation.map((education, index) => (
@@ -141,8 +124,6 @@ export default function EducationPage() {
                   <CertificateCard
                     key={certificate.id}
                     certificate={certificate}
-                    isExpanded={expandedCertificate === certificate.id}
-                    onToggle={() => toggleCertificateExpand(certificate.id)}
                   />
                 ))}
               </motion.div>

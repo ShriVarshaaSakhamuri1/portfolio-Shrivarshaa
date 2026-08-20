@@ -2,9 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { useTheme } from "next-themes";
-import { Sun, Moon } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { DesktopSidebar } from "@/components/navigation/DesktopSidebar";
 import { MobileHeader } from "@/components/navigation/MobileHeader";
 import { Hero } from "@/components/sections/Hero";
@@ -41,12 +38,6 @@ export default function PortfolioPage({
   hideLinkedIn = false,
 }: PortfolioPageProps) {
   const [activeSection, setActiveSection] = useState("home");
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const observerOptions = {
     threshold: 0.1,
@@ -86,52 +77,21 @@ export default function PortfolioPage({
     }
   };
 
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
-  const renderThemeToggle = () => {
-    if (!mounted) {
-      return (
-        <Button variant="ghost" size="icon" aria-label="Toggle theme">
-          <div className="h-5 w-5" />
-        </Button>
-      );
-    }
-
-    return (
-      <Button
-        variant="ghost"
-        size="icon"
-        onClick={toggleTheme}
-        aria-label="Toggle theme"
-      >
-        {theme === "dark" ? (
-          <Sun className="h-5 w-5" />
-        ) : (
-          <Moon className="h-5 w-5" />
-        )}
-      </Button>
-    );
-  };
-
   return (
     <div className="flex min-h-screen bg-background">
       <DesktopSidebar
         activeSection={activeSection}
         scrollToSection={scrollToSection}
-        renderThemeToggle={renderThemeToggle}
         showLinkedIn={!hideLinkedIn}
       />
       <MobileHeader
         activeSection={activeSection}
         scrollToSection={scrollToSection}
-        renderThemeToggle={renderThemeToggle}
         showLinkedIn={!hideLinkedIn}
       />
 
-      <main className="flex-1 lg:ml-64">
-        <section ref={homeRef} id="home">
+      <main className="flex-1 lg:ml-[220px]">
+        <section ref={homeRef} id="home" className="scroll-mt-16">
           <Hero
             scrollToSection={scrollToSection}
             hideLinkedIn={hideLinkedIn}
@@ -139,25 +99,25 @@ export default function PortfolioPage({
             subtitle={heroSubtitle}
           />
         </section>
-        <section ref={aboutRef} id="about">
+        <section ref={aboutRef} id="about" className="scroll-mt-16">
           <AboutSection overview={aboutOverview} subtitle={aboutSubtitle} />
         </section>
-        <section ref={experienceRef} id="experience">
+        <section ref={experienceRef} id="experience" className="scroll-mt-16">
           <ExperienceSection
             jobs={experienceJobs}
             description={experienceDescription}
           />
         </section>
-        <section ref={projectsRef} id="projects">
+        <section ref={projectsRef} id="projects" className="scroll-mt-16">
           <ProjectsSection description={projectsDescription} />
         </section>
-        <section ref={educationRef} id="education">
-          <EducationSection />
-        </section>
-        <section ref={skillsRef} id="skills">
+        <section ref={skillsRef} id="skills" className="scroll-mt-16">
           <SkillsSection data={skillsData} />
         </section>
-        <section ref={contactRef} id="contact">
+        <section ref={educationRef} id="education" className="scroll-mt-16">
+          <EducationSection />
+        </section>
+        <section ref={contactRef} id="contact" className="scroll-mt-16">
           <ContactSection />
         </section>
       </main>

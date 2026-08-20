@@ -80,25 +80,18 @@ export default function AboutPage({
   return (
     <div className="flex min-h-screen bg-background">
       <div className="flex-1 relative">
-        <div className="absolute inset-0 overflow-hidden -z-10">
-          <div className="absolute top-1/4 left-1/4 h-56 w-56 rounded-full bg-primary/5 blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 h-36 w-36 rounded-full bg-secondary/5 blur-3xl" />
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
-        </div>
-
         <SectionContainer>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-6 text-center"
+            className="section-heading"
           >
-            <h1 className="mb-2 text-2xl font-bold md:text-3xl">
-              <span className="text-primary">About</span>{" "}
-              <span className="text-secondary">Me</span>
+            <p className="terminal-label mb-3">&gt; about_me</p>
+            <h1 className="mb-3 text-2xl font-semibold text-foreground md:text-3xl">
+              About Me
             </h1>
-            <div className="mx-auto h-0.5 w-12 bg-gradient-to-r from-primary to-secondary" />
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
+            <p className="max-w-2xl text-sm leading-7 text-muted-foreground">
               {subtitle}
             </p>
           </motion.div>
@@ -109,8 +102,8 @@ export default function AboutPage({
             onValueChange={setActiveTab}
             className="mb-6"
           >
-            <div className="mb-5 flex justify-center">
-              <TabsList className="grid w-full max-w-xs grid-cols-2">
+            <div className="mb-5 flex justify-start">
+              <TabsList className="grid w-full max-w-xs grid-cols-2 border border-[var(--border-raw)] bg-[var(--surface)]">
                 <TabsTrigger value="overview">Overview</TabsTrigger>
                 <TabsTrigger value="personal">Personal</TabsTrigger>
               </TabsList>
@@ -125,10 +118,10 @@ export default function AboutPage({
               >
                 <motion.div variants={itemVariants}>
                   <Card className="interactive-card bg-card">
-                    <CardHeader className="items-center px-5 pb-4 pt-6 text-center sm:px-8">
-                      <div className="mb-4 h-24 w-24 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5">
-                        <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
-                          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-3xl font-bold text-transparent">
+                    <CardHeader className="items-start px-5 pb-4 pt-6 text-left sm:px-8">
+                      <div className="mb-4 h-20 w-20 rounded-md border border-primary/20 bg-primary/10 p-0.5">
+                        <div className="flex h-full w-full items-center justify-center rounded-md bg-card">
+                          <span className="font-mono text-2xl font-bold text-primary">
                             SS
                           </span>
                         </div>

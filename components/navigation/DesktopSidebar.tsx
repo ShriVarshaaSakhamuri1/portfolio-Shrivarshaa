@@ -1,76 +1,100 @@
 "use client";
 
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SECTIONS } from "@/lib/constants";
 
 interface DesktopSidebarProps {
   activeSection: string;
   scrollToSection: (sectionId: string) => void;
-  renderThemeToggle: () => React.ReactNode;
   showLinkedIn?: boolean;
 }
 
 export function DesktopSidebar({
   activeSection,
   scrollToSection,
-  renderThemeToggle,
   showLinkedIn = true,
 }: DesktopSidebarProps) {
   return (
-    <aside className="hidden lg:flex w-64 flex-col fixed inset-y-0 z-30 border-sidebar-border bg-sidebar-background border-r">
-      <div className="flex h-14 items-center px-4 border-b border-sidebar-border">
+    <aside className="fixed inset-y-0 z-30 hidden w-[220px] flex-col border-r border-[var(--border-raw)] bg-[var(--surface)] lg:flex">
+      <div className="flex h-20 items-center border-b border-[var(--border-raw)] px-4">
         <Link
           href="#home"
-          className="flex items-center gap-2 font-semibold text-sidebar-foreground"
+          className="group flex min-w-0 items-center gap-3 font-semibold text-foreground"
           onClick={() => scrollToSection("home")}
         >
-          <div className="w-8 h-8 rounded-full bg-sidebar-primary flex items-center justify-center text-sidebar-primary-foreground font-bold">
+          <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-md border border-primary/20 bg-primary/10 font-mono text-sm font-bold text-primary">
             SS
           </div>
-          <span>Shrivarshaa Sakhamuri</span>
+          <div className="min-w-0">
+            <span className="block truncate text-sm">Shrivarshaa</span>
+            <span className="block truncate font-mono text-[11px] font-normal text-muted-foreground">
+              ml_engineer
+            </span>
+          </div>
         </Link>
       </div>
-      <nav className="flex-1 py-4">
-        {SECTIONS.map((section) => (
+      <nav className="flex-1 space-y-1 px-3 py-5">
+        {SECTIONS.map((section) => {
+          const targetId = section.targetId ?? section.id;
+          const isActive =
+            activeSection === section.id ||
+            (section.id === "personal" && activeSection === "about");
+
+          return (
           <Link
             key={section.id}
-            href={`#${section.id}`}
+            href={`#${targetId}`}
             className={cn(
-              "flex items-center gap-3 px-4 py-3 text-sm transition-colors",
-              activeSection === section.id
-                ? "bg-sidebar-accent text-sidebar-foreground font-medium"
-                : "text-muted-foreground hover:text-sidebar-foreground hover:bg-sidebar-accent/50"
+              "flex items-center gap-3 rounded-md border px-3 py-2.5 text-sm transition-colors",
+              isActive
+                ? "border-primary/10 bg-primary/10 text-primary"
+                : "border-transparent text-muted-foreground hover:border-[var(--border-hover)] hover:bg-[var(--surface-hover)] hover:text-foreground"
             )}
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection(section.id);
+              scrollToSection(targetId);
             }}
           >
             {section.icon}
             <span>{section.label}</span>
           </Link>
-        ))}
+          );
+        })}
       </nav>
-      <div className="p-4 border-t border-sidebar-border flex justify-between items-center">
-        <div className="flex gap-4">
+      <div className="border-t border-[var(--border-raw)] p-4">
+        <p className="mb-3 font-mono text-[11px] text-muted-foreground">
+          // connect
+        </p>
+        <div className="flex items-center">
+          <div className="flex gap-2">
           <Link
             href="https://github.com/ShriVarshaaSakhamuri1"
-            className="text-muted-foreground hover:text-sidebar-foreground transition-colors"
+            aria-label="GitHub"
+            className="rounded-md border border-[var(--border-raw)] p-2 text-muted-foreground transition-colors hover:border-primary/30 hover:bg-primary/10 hover:text-primary"
           >
-            <Github size={20} />
+            <Github size={16} />
           </Link>
           {showLinkedIn && (
             <Link
               href="https://www.linkedin.com/in/shrivarshaa-sakhamuri/"
-              className="text-muted-foreground hover:text-sidebar-foreground transition-colors"
+              aria-label="LinkedIn"
+              className="rounded-md border border-[var(--border-raw)] p-2 text-muted-foreground transition-colors hover:border-primary/30 hover:bg-primary/10 hover:text-primary"
             >
-              <Linkedin size={20} />
+              <Linkedin size={16} />
             </Link>
           )}
+          <button
+            type="button"
+            aria-label="Email"
+            onClick={() => scrollToSection("contact")}
+            className="rounded-md border border-[var(--border-raw)] p-2 text-muted-foreground transition-colors hover:border-primary/30 hover:bg-primary/10 hover:text-primary"
+          >
+            <Mail size={16} />
+          </button>
+          </div>
         </div>
-        {renderThemeToggle()}
       </div>
     </aside>
   );
