@@ -32,8 +32,7 @@ export function Hero({
               roleTexts ?? [
                 "ML Engineer",
                 "Data Scientist",
-                "AI/ML Engineer",
-                "Machine Learning Engineer",
+                "AI Engineer",
               ]
             }
             staticText="ML Engineer / Data Scientist"
